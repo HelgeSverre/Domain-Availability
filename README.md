@@ -6,7 +6,7 @@ A PHP Class used to check if a domain has been registered
 
 ## Usage:
 
-```
+```php
 include ('DomainAvailability.php');  
 $Domain= new DomainAvailability;  
 $available = $Domain->is_available("helgesverre.com");
