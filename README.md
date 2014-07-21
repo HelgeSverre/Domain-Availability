@@ -18,4 +18,4 @@ if ($available) {
 }
 ```
 
-Created by [Helge Sverre](http://helgesverre.com)
+Script created by [Helge Sverre](https://helgesverre.com)
