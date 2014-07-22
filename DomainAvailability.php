@@ -10,26 +10,33 @@
 	
 */
 
-class DomainAPI {
-
-	// Availability Function
-	public function is_available($domain) {
+class DomainAvailability {
+	
+	/**
+	* This function checks if the supplied domain name is registered
+	*
+	* @author  Helge Sverre <email@helgesverre.com>
+	*
+	* @param string $domain The domain that will be checked for registration.
+	* @param boolean $error_reporting Set if the function should display errors or suppress them, default is TRUE
+	* @return boolean true means the domain is NOT registered
+	*/
+	public function is_available($domain, $error_reporting = TRUE) {
 		
-		///////////////////////////////////////////
-		// Function Private Variables.
+		// make the domain lowercase
 		$domain = strtolower($domain);
-		$timeout = 10; // Seconds
+
+		// Set the timeout (in seconds) for the socket open function.
+		$timeout = 10;
 		
 		
-		// TODO: ADD A THIRD ARGUMENT IN THE ARRAY TO CHECK FOR EXCESSIVE USAGE STRINGS!
 		
-		
-		///////////////////////////////////////////
-		// WARNING: THIS LIST IS NOT COMPLETE!
-		// This script works by searching for a specific string that 
-		// shows up if a domain is not found(not registered),these strings 
-		// must be added manually and may change at any time without warning.
-		// Syntax:  TLD => Whois Server , "Domain Not Found"-String
+		/**
+		* This array contains the list of WHOIS servers and the "domain not found" string 
+		* to be searched for to check if the domain is available for registration.
+		*
+		* NOTE: The "domain not found" string may change at any time for any reason.
+		*/
 		$whois_arr = array(
 			".com" =>  array("whois.verisign-grs.com", "No match for "),
 			".net" =>  array("whois.verisign-grs.com", "No match for "),
@@ -478,63 +485,84 @@ class DomainAPI {
 		);
 
 
-		///////////////////////////////////////////
-		// Find the TLD	
-		
-		if ( substr($domain, strpos($domain, "www.")) == FALSE OR substr($domain, strpos($domain, "www.")) == "" ) {
-			$domain_offset = 0;
-		} else { 
-			$domain_offset = 4; 
-		}
-		
-		$tld_index = strpos($domain, ".", $domain_offset );
-		$tld = substr($domain, $tld_index, ( strlen($domain) - $tld_index ) ); 
-		
 
-		///////////////////////////////////////////
-		// Now cross reference the TLD with the WHOIS Array
-		// If the tld is not found in the list, give an error and die.
-		
+		// get the TLD of the domain
+		$tld = get_tld($domain);
+
+
+		// If an entry for the TLD exists in the whois array 
 		if ($whois_arr[$tld][0]) {
+			// set the hostname for the whois server
 			$whois_server = $whois_arr[$tld][0];
+
+			// set the "domain not found" string
 			$bad_string = $whois_arr[$tld][1];
 		} else {
+			// TLD is not in the whois array, die
 			die("WHOIS server not found for that TLD");
 		}
 			
-		///////////////////////////////////////////
 		// Connect to whois server and get information
-		
 		$fp = fsockopen($whois_server, 43, $errno, $errstr, $timeout);
 		if (!$fp) {
-			// Give us the error code and string, used for debugging
-			// echo "<pre>";
-			// echo "$errstr ($errno)<br />\n";
-			// echo "</pre>";
-			
-			
+			// display the socket error if error reporting is enabled.
+			if ($error_reporting) {
+				echo "{$errstr} ({$errno})<br />\n";
+			} 		
 		} else {
+
+			// Construct the WHOIS request as specified in RFC 3912 ( http://tools.ietf.org/html/rfc3912 )
 			$out = $domain . "\r\n";
+
+			// Send the WHOIS request
 			fwrite($fp, $out);
 			
+			// While the connnection is receiving data
 			while (!feof($fp)) {
+				// append the incommming data to a variable, sorry for the magic number
 				$whois .= fgets($fp, 128);
 			}
-			
-			// Uncomment for debugging.
-			// echo "<pre>";
-			// echo $whois;
-			// echo "</pre>";
-			
+		
+			// close the connection to the WHOIS server
 			fclose($fp);
 			
-			// If you find the bad string in the result, the domain is available.
+			// If you find the "domain not found" string in the result, the domain is available.
 			if (strpos($whois, $bad_string) !== FALSE) {
 				return TRUE; // available
 			} else {
 				return FALSE; // not available
 			}	
 		}
+	}
+
+
+
+	/**
+	* Extracts the TLD from a domain, supports URLS with "www." at the beginning.
+	*
+	* @author  Helge Sverre <email@helgesverre.com>
+	*
+	* @param string $domain The domain that will get it's TLD extracted
+	* @return string The TLD for $domain
+	*/
+
+	public function get_tld ($domain) {
+
+		// this checks the domain string to see if it has "www."" included at the end
+		if ( !substr($domain, strpos($domain, "www.")) || empty(substr($domain, strpos($domain, "www."))) ) {
+			// If "www." is not found in the domain string then set the offset to 0
+			$domain_offset = 0;
+		} else {
+			// If "www." is found in the domain string then set the offset to 4
+			$domain_offset = 4; 
+		}
+		
+		// Find the first occurence of ".", start at the domain offset so it doesnt use "www." as the first occurence
+		$tld_index = strpos($domain, ".", $domain_offset);
+
+		// Use the position of the first occurence of "." to extract out the TLD
+		$tld = substr($domain, $tld_index, ( strlen($domain) - $tld_index ) ); 
+		return $tld;
 	}
 }
 
