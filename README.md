@@ -1,4 +1,4 @@
-Domain-Availability
+Domain Availability Script
 ===================
 
 A PHP Class used to check if a domain has been registered
