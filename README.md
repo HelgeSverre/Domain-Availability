@@ -2,6 +2,7 @@ Domain Availability Script
 ===================
 
 A PHP Class used to check if a domain has been registered.
+
 Created to be fast and easy to use, modify and redistribute as you wish, credit me if appropriate.
 
 
