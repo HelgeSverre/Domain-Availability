@@ -25,6 +25,6 @@ To enable full error reporting (E_ALL) when developing/debugging pass true as th
 ```PHP
 DomainAvailability(TRUE);
 ``` 
-or checkout example.php 
+or look at example.php for an example.
 
 Code by [Helge Sverre](https://helgesverre.com)
