@@ -516,7 +516,7 @@ class DomainAvailability {
 		if (gethostbyname($domain) == $domain) {
 
 			// get the TLD of the domain
-			$tld = get_tld($domain);
+			$tld = $this->get_tld($domain);
 
 			// If an entry for the TLD exists in the whois array 
 			if ($whois_arr[$tld][0]) {
@@ -570,10 +570,7 @@ class DomainAvailability {
 			return FALSE;	
 		}
 	}
-}
-
-
-
+	
 	/**
 	* Extracts the TLD from a domain, supports URLS with "www." at the beginning.
 	*
@@ -583,7 +580,7 @@ class DomainAvailability {
 	* @return string The TLD for $domain
 	*/
 
-	function get_tld ($domain) {
+	public function get_tld ($domain) {
 
 		// this checks the domain string to see if it has "www."" included at the end
 		if ( !substr($domain, strpos($domain, "www.")) || empty(substr($domain, strpos($domain, "www."))) ) {
@@ -601,6 +598,10 @@ class DomainAvailability {
 		$tld = substr($domain, $tld_index, ( strlen($domain) - $tld_index ) ); 
 		return $tld;
 	}
+}
+
+
+
 
 
 ?>

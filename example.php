@@ -1,6 +1,5 @@
 <?php
 
-
 include ('DomainAvailability.php');  
 $Domain = new DomainAvailability(true);
 $available = $Domain->is_available("helgesverre.com");
@@ -10,4 +9,5 @@ if ($available) {
 } else {
     echo "The domain is registered";
 }
+
 ?>
