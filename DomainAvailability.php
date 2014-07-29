@@ -485,53 +485,60 @@ class DomainAvailability {
 		);
 
 
+		// gethostbyname returns the same string if it cant find the domain, 
+		// we do a further check to see if it is a false positive
+		if (gethostbyname($domain) === $domain) {
 
-		// get the TLD of the domain
-		$tld = get_tld($domain);
+			// get the TLD of the domain
+			$tld = get_tld($domain);
 
+			// If an entry for the TLD exists in the whois array 
+			if ($whois_arr[$tld][0]) {
+				// set the hostname for the whois server
+				$whois_server = $whois_arr[$tld][0];
 
-		// If an entry for the TLD exists in the whois array 
-		if ($whois_arr[$tld][0]) {
-			// set the hostname for the whois server
-			$whois_server = $whois_arr[$tld][0];
-
-			// set the "domain not found" string
-			$bad_string = $whois_arr[$tld][1];
-		} else {
-			// TLD is not in the whois array, die
-			die("WHOIS server not found for that TLD");
-		}
-			
-		// Connect to whois server and get information
-		$fp = fsockopen($whois_server, 43, $errno, $errstr, $timeout);
-		if (!$fp) {
-			// display the socket error if error reporting is enabled.
-			if ($error_reporting) {
-				echo "{$errstr} ({$errno})<br />\n";
-			} 		
-		} else {
-
-			// Construct the WHOIS request as specified in RFC 3912 ( http://tools.ietf.org/html/rfc3912 )
-			$out = $domain . "\r\n";
-
-			// Send the WHOIS request
-			fwrite($fp, $out);
-			
-			// While the connnection is receiving data
-			while (!feof($fp)) {
-				// append the incommming data to a variable, sorry for the magic number
-				$whois .= fgets($fp, 128);
-			}
-		
-			// close the connection to the WHOIS server
-			fclose($fp);
-			
-			// If you find the "domain not found" string in the result, the domain is available.
-			if (strpos($whois, $bad_string) !== FALSE) {
-				return TRUE; // available
+				// set the "domain not found" string
+				$bad_string = $whois_arr[$tld][1];
 			} else {
-				return FALSE; // not available
-			}	
+				// TLD is not in the whois array, die
+				die("WHOIS server not found for that TLD");
+			}
+				
+			// Connect to whois server and get information
+			$fp = fsockopen($whois_server, 43, $errno, $errstr, $timeout);
+			if (!$fp) {
+				// display the socket error if error reporting is enabled.
+				if ($error_reporting) {
+					echo "{$errstr} ({$errno})<br />\n";
+				} 		
+			} else {
+
+				// Construct the WHOIS request as specified in RFC 3912 ( http://tools.ietf.org/html/rfc3912 )
+				$out = $domain . "\r\n";
+
+				// Send the WHOIS request
+				fwrite($fp, $out);
+				
+				// While the connnection is receiving data
+				while (!feof($fp)) {
+					// append the incommming data to a variable, sorry for the magic number
+					$whois .= fgets($fp, 128);
+				}
+			
+				// close the connection to the WHOIS server
+				fclose($fp);
+				
+				// If you find the "domain not found" string in the result, the domain is available.
+				if (strpos($whois, $bad_string) !== FALSE) {
+					return TRUE; // available
+				} else {
+					return FALSE; // not available
+				}	
+			}
+
+		} else {
+			// not available
+			return FALSE;	
 		}
 	}
 
