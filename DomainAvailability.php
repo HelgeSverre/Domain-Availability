@@ -10,8 +10,34 @@
 	
 */
 
+
+
+/**
+* Class responsible for checking if a domain is registered
+*
+* @author  Helge Sverre <email@helgesverre.com>
+*
+* @param boolean $error_reporting Set if the function should display errors or suppress them, default is TRUE
+* @return boolean true means the domain is NOT registered
+*/
 class DomainAvailability {
 	
+	private  $error_reporting;
+
+
+	public function __construct($debug = false) {
+		if ( $debug ) {
+			error_reporting(E_ALL);
+			$error_reporting = true;
+		} else {
+			
+			error_reporting(0);		
+			$error_reporting = false;
+		}
+		
+	}
+
+
 	/**
 	* This function checks if the supplied domain name is registered
 	*
@@ -21,7 +47,7 @@ class DomainAvailability {
 	* @param boolean $error_reporting Set if the function should display errors or suppress them, default is TRUE
 	* @return boolean true means the domain is NOT registered
 	*/
-	public function is_available($domain, $error_reporting = TRUE) {
+	public function is_available($domain) {
 		
 		// make the domain lowercase
 		$domain = strtolower($domain);
@@ -487,7 +513,7 @@ class DomainAvailability {
 
 		// gethostbyname returns the same string if it cant find the domain, 
 		// we do a further check to see if it is a false positive
-		if (gethostbyname($domain) === $domain) {
+		if (gethostbyname($domain) == $domain) {
 
 			// get the TLD of the domain
 			$tld = get_tld($domain);
@@ -519,6 +545,9 @@ class DomainAvailability {
 				// Send the WHOIS request
 				fwrite($fp, $out);
 				
+				// assign null to $whois to stop php complaining about it not being defined.
+				$whois = null;
+
 				// While the connnection is receiving data
 				while (!feof($fp)) {
 					// append the incommming data to a variable, sorry for the magic number
@@ -541,6 +570,7 @@ class DomainAvailability {
 			return FALSE;	
 		}
 	}
+}
 
 
 
@@ -553,7 +583,7 @@ class DomainAvailability {
 	* @return string The TLD for $domain
 	*/
 
-	public function get_tld ($domain) {
+	function get_tld ($domain) {
 
 		// this checks the domain string to see if it has "www."" included at the end
 		if ( !substr($domain, strpos($domain, "www.")) || empty(substr($domain, strpos($domain, "www."))) ) {
@@ -571,6 +601,6 @@ class DomainAvailability {
 		$tld = substr($domain, $tld_index, ( strlen($domain) - $tld_index ) ); 
 		return $tld;
 	}
-}
+
 
 ?>

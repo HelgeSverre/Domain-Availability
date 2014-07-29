@@ -10,9 +10,9 @@ Created to be fast and easy to use, modify and redistribute as you wish, credit 
 
 ```php
 include ('DomainAvailability.php');  
-$Domain = new DomainAvailability;  
+$Domain = new DomainAvailability();
 $available = $Domain->is_available("helgesverre.com");
- 
+
 if ($available) {
     echo "The domain is not registered";
 } else {
@@ -20,6 +20,10 @@ if ($available) {
 }
 ```
 
+To enable enable full error reporting (E_ALL) when developing/debugging pass true when you are creating a new class instance:
 
+```PHP
+DomainAvailability(TRUE);
+``` 
 
 Script created by [Helge Sverre](https://helgesverre.com)
