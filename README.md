@@ -20,10 +20,11 @@ if ($available) {
 }
 ```
 
-To enable enable full error reporting (E_ALL) when developing/debugging pass true when you are creating a new class instance:
+To enable full error reporting (E_ALL) when developing/debugging pass true as the only parameter when you are creating a new class instance like so:
 
 ```PHP
 DomainAvailability(TRUE);
 ``` 
+or checkout example.php 
 
-Script created by [Helge Sverre](https://helgesverre.com)
+Code by [Helge Sverre](https://helgesverre.com)
