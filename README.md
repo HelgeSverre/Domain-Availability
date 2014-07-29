@@ -5,6 +5,11 @@ A PHP Class used to check if a domain has been registered.
 
 Created to be fast and easy to use, modify and redistribute as you wish, credit me if appropriate.
 
+## How to install
+1. Download DomainAvailability.php
+2. Place it in your project folder (I prefer to put it in /lib).
+3. include it in your PHP file, look at example.php or the code below.
+
 
 ## Usage:
 
