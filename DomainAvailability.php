@@ -17,7 +17,7 @@
 *
 * @author  Helge Sverre <email@helgesverre.com>
 *
-* @param boolean $error_reporting Set if the function should display errors or suppress them, default is TRUE
+* @param boolean $error_reporting Set if the function should display errors or suppress them, default is false
 * @return boolean true means the domain is NOT registered
 */
 class DomainAvailability {
@@ -526,6 +526,7 @@ class DomainAvailability {
 				// set the "domain not found" string
 				$bad_string = $whois_arr[$tld][1];
 			} else {
+				// TODO: REFACTOR THIS
 				// TLD is not in the whois array, die
 				die("WHOIS server not found for that TLD");
 			}
@@ -582,8 +583,10 @@ class DomainAvailability {
 
 	public function get_tld ($domain) {
 
+		$hasWWW = substr($domain, strpos($domain, "www.");
+
 		// this checks the domain string to see if it has "www."" included at the end
-		if ( !substr($domain, strpos($domain, "www.")) || empty(substr($domain, strpos($domain, "www."))) ) {
+		if ( !$hasWWW) || empty($hasWWW)) ) {
 			// If "www." is not found in the domain string then set the offset to 0
 			$domain_offset = 0;
 		} else {
