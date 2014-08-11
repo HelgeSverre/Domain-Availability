@@ -583,10 +583,10 @@ class DomainAvailability {
 
 	public function get_tld ($domain) {
 
-		$hasWWW = substr($domain, strpos($domain, "www.");
+		$hasWWW = substr($domain, strpos($domain, "www."));
 
 		// this checks the domain string to see if it has "www."" included at the end
-		if ( !$hasWWW) || empty($hasWWW)) ) {
+		if ( !$hasWWW || empty($hasWWW) ) {
 			// If "www." is not found in the domain string then set the offset to 0
 			$domain_offset = 0;
 		} else {
