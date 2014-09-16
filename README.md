@@ -85,4 +85,11 @@ Due to the fact that a lot of the domain extentions listed on the IANA website, 
 ```
 If you know the whois server for any of these please feel free to create an issue with an update.
 
+
+## License
+
+![Creative Commons](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+
+
 Code and research by [Helge Sverre](https://helgesverre.com)
