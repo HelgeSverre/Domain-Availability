@@ -37,7 +37,7 @@ The WHOIS server array is incomplete and some data is missing, the most popular 
 
 ## Missing Domain extensions
 
-Due to the fact that a lot of the domains listed on the IANA ROOT website does not contain any information about the WHOIS server to use the following domain extensions are not available (yet):
+Due to the fact that a lot of the domain extentions listed on the IANA website, does not contain any information one which WHOIS server to use when querying for the domain information, the following domain extensions are not available (yet):
 
 ```
 .dj, .do, .eg, .eh, .er, .et, .fj, .fk, .fm, .gallery, .gb, .ge, .gf, .gh, .gm, .gn, .gp,
@@ -48,5 +48,6 @@ Due to the fact that a lot of the domains listed on the IANA ROOT website does n
 .um, .uno, .va, .vi, .vi, .vn, .webcam, .ye, .yokohoma, .za, .ryukyu, .meet, .vote, .lc, 
 .voto, .wed, .zw
 ```
+If you know the whois server for any of these please feel free to create an issue with an update.
 
 Code and research by [Helge Sverre](https://helgesverre.com)
