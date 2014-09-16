@@ -244,7 +244,7 @@ class DomainAvailability {
 			".int" => array("whois.iana.org","MATCH"),
 			".international" => array("whois.donuts.co","Domain not found."),
 			".iq" => array("whois.cmc.iq","MATCH"),
-			".ir" => array("whois.nic.ir","MATCH"),
+			".ir" => array("whois.nic.ir","No entries found in the selected"),
 			".is" => array("whois.isnic.is","MATCH"),
 			".it" => array("whois.nic.it","MATCH"),
 			".je" => array("whois.je","MATCH"),
