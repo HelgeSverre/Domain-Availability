@@ -407,9 +407,10 @@ class DomainAvailability {
 			".ws" => array("whois.website.ws","No match for"),
 			".xxx" => array("whois.nic.xxx","NOT FOUND"),
 			".xyz" => array("whois.nic.xyz","DOMAIN NOT FOUND"),
-			".yt" =>array("whois.nic.yt","No entries found in the AFNIC Database."),
-			".zm" =>array("whois.nic.zm","Domain Status: No Object Found"),
-			".zone" =>array( "whois.donuts.co","Domain not found.")
+			".yt" => array("whois.nic.yt","No entries found in the AFNIC Database."),
+			".ryukyu" => array("whois.nic.ryukyu", "DOMAIN NOT FOUND"),
+			".zm" => array("whois.nic.zm","Domain Status: No Object Found"),
+			".zone" => array( "whois.donuts.co","Domain not found.")
 		);
 
 
