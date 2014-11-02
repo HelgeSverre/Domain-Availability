@@ -14,6 +14,7 @@ Created to be fast and easy to use, modify and redistribute as you wish, credit 
 ## Usage:
 
 ```php
+<?php
 include ('DomainAvailability.php');  
 $Domain = new DomainAvailability();
 $available = $Domain->is_available("helgesverre.com");
@@ -23,6 +24,7 @@ if ($available) {
 } else {
     echo "The domain is registered";
 }
+?>
 ```
 
 To enable full error reporting (E_ALL) when developing/debugging pass true as the only parameter when you are creating a new class instance like so:
