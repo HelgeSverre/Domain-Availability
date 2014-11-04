@@ -483,7 +483,7 @@ class DomainAvailability {
 	public function get_tld ($domain) {
 		$split = explode('.', $domain);
 
-		if(count($split) === 0) {
+		if(count($split) < 2) {
 			throw new Exception('Invalid domain extension');
 		}
 		return end($split);
