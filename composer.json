@@ -1,0 +1,29 @@
+{
+  "name": "cwd/domain-availability",
+  "version": "0.1",
+  "description": "A PHP Class used to check if a domain has been registered.",
+  "keywords": ["domain"],
+  "type": "library",
+  "license": "Attribution-ShareAlike 4.0 International",
+  "authors": [
+    {
+      "name": "Helge Sverre",
+      "email": "helge.sverre@gmail.com",
+      "homepage": "http://www.helgesverre.com"
+    },{
+      "name": "Hessevik Liseth"
+    },{
+      "name": "Ludwig Ruderstaller",
+      "email": "lr@cwd.at",
+      "homepage": "http://www.cwd.at"
+    }
+  ],
+  "require": {
+    "php": ">=5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "HelgeSverre\\DomainAvailability\\": "src/"
+    }
+  }
+}

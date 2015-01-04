@@ -1,13 +1,19 @@
 <?php
+require('vendor/autoload.php');
+$service = new HelgeSverre\DomainAvailability\AvailabilityService(true);
 
-include ('DomainAvailability.php');  
-$Domain = new DomainAvailability(true);
-$available = $Domain->is_available("helgesverre.com");
+$testDomains = array(
+    'google.com',
+    'fasdf2342asdfcvcxv.org'
+);
 
-if ($available) {
-    echo "The domain is not registered";
-} else {
-    echo "The domain is registered";
+foreach ($testDomains as $domain) {
+    $available = $service->isAvailable($domain);
+
+    if ($available) {
+        echo $domain." is not registered\n";
+    } else {
+        echo $domain." is registered\n";
+    }
 }
 
-?>
