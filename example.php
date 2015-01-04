@@ -1,8 +1,7 @@
 <?php
-
-include ('DomainAvailability.php');  
-$Domain = new DomainAvailability(true);
-$available = $Domain->is_available("helgesverre.com");
+require('src/.php');
+$domain = new HelgeSverre\DomainAvailability\AvailabilityService(true);
+$available = $domain->isAvailable("helgesverre.com");
 
 if ($available) {
     echo "The domain is not registered";
@@ -10,4 +9,3 @@ if ($available) {
     echo "The domain is registered";
 }
 
-?>
