@@ -1,5 +1,5 @@
 {
-  "name": "helgesverre/domain-availability",
+  "name": "cwd/domain-availability",
   "version": "0.1",
   "description": "A PHP Class used to check if a domain has been registered.",
   "keywords": ["domain"],

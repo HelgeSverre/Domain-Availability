@@ -1,5 +1,5 @@
 <?php
-require('src/.php');
+require('src/AvailabilityService.php');
 $domain = new HelgeSverre\DomainAvailability\AvailabilityService(true);
 $available = $domain->isAvailable("helgesverre.com");
 
