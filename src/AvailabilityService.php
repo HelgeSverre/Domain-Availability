@@ -414,6 +414,7 @@ class AvailabilityService
 
         // gethostbyname returns the same string if it cant find the domain,
         // we do a further check to see if it is a false positive
+        // @Todo: Not Sure about this shortcut - only because a DNS entry exists, doesnt say anything about the availability
         if (gethostbyname($domain) == $domain) {
             $tld = $this->getTld($domain);
 
@@ -422,14 +423,11 @@ class AvailabilityService
                 $badString = $this->whois[$tld][1];
             } else {
                 // TODO: REFACTOR THIS
-                // TLD is not in the whois array, die
                 throw new Exception("WHOIS server not found for that TLD");
             }
 
-            // Connect to whois server and get information
             $fp = fsockopen($whoisServer, 43, $errno, $errstr, $timeout);
             if (!$fp) {
-                // display the socket error if error reporting is enabled.
                 if ($this->errorReporting) {
                     echo "{$errstr} ({$errno})<br />\n";
                 }
@@ -448,14 +446,12 @@ class AvailabilityService
 
                 if (strpos($whois, $badString) !== false) {
                     return true; // available
-                } else {
-                    return false; // not available
                 }
+                return false; // not available
             }
-        } else {
-            // not available
-            return true;
         }
+
+        return false;
     }
 
     /**
