@@ -13,25 +13,26 @@ Created to be fast and easy to use, modify and redistribute as you wish, credit 
 
 ## Usage:
 
-```php
-<?php
-include ('DomainAvailability.php');  
-$Domain = new DomainAvailability();
-$available = $Domain->is_available("helgesverre.com");
 
-if ($available) {
-    echo "The domain is not registered";
-} else {
-    echo "The domain is registered";
-}
-?>
+### Composer Install:
+```
+composer create-project -s dev cwd/domain-availability
 ```
 
-To enable full error reporting (E_ALL) when developing/debugging pass true as the only parameter when you are creating a new class instance like so:
 
-```PHP
-$Domain = new DomainAvailability(true);
-``` 
+```php
+<?php
+require('vendor/autoload.php');
+$service = new HelgeSverre\DomainAvailability\AvailabilityService(true);
+
+$available = $service->isAvailable("helgesverre.com");
+if ($available) {
+    echo $domain." is not registered\n";
+} else {
+    echo $domain." is registered\n";
+}
+```
+
 or look at example.php for an example.
 
 ## Notes
