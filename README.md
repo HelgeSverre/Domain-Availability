@@ -5,20 +5,20 @@ A PHP Class used to check if a domain has been registered.
 
 Created to be fast and easy to use, modify and redistribute as you wish, credit me if appropriate.
 
-## How to install
-1. Download DomainAvailability.php
-2. Place it in your project folder (I prefer to put it in /lib).
-3. include it in your PHP file, look at example.php or the code below.
-
-
-## Usage:
-
-
-### Composer Install:
+## Install with Composer:
 ```
 composer create-project -s dev cwd/domain-availability
 ```
 
+
+## Install manually
+
+1. Download the AvailabilityService.php file and place it "somewhere" in your project folder.
+2. Include it in your PHP file.
+3. Done.
+
+
+## Usage:
 
 ```php
 <?php
