@@ -89,6 +89,11 @@ Due to the fact that a lot of the domain extentions listed on the IANA website, 
 If you know the whois server for any of these please feel free to create an issue with an update.
 
 
+## Custom Integration Service!
+If you need to integrate this script into your website, but don't have the knowledge to do so, I offer an integration service, email me at [email@helgesverre.com](mailto:email@helgesverre.com) (or use my [contact form](https://helgesverre.com/contact.php)  with a description of what you need to integrate with and I will give you a quote for my time.
+
+I require 50% upfront payment for integration services.
+
 ## License
 
 ![Creative Commons](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
