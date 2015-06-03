@@ -1,6 +1,8 @@
 Domain Availability Script
 ===================
 
+[![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/helgesverre)
+
 A PHP Class used to check if a domain has been registered.
 
 Created to be fast and easy to use, modify and redistribute as you wish, credit me if appropriate.
