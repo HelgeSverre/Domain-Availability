@@ -46,7 +46,7 @@ These are the domain extensions that are supported by this script.
 ``` 
 .com, .net, .org, .co.uk, .io, .computer, .ac, .academy, .actor, .ae, .aero, .af, .ag, 
 .agency, .ai, .am, .archi, .arpa, .as, .asia, .associates, .at, .au, .aw, .ax, .az, .bar, 
-.bargains, .be, .berlin, .bg, .bi, .bike, .biz, .bj, .blackfriday, .bn, .boutique, .build, 
+.bargains, .bayern, .be, .berlin, .bg, .bi, .bike, .biz, .bj, .blackfriday, .bn, .boutique, .build, 
 .builders, .bw, .by, .ca, .cab, .camera, .camp, .captial, .cards, .careers, .cat, .catering, 
 .cc, .center, .ceo, .cf, .ch, .cheap, .christmas, .ci, .cl, .cleaning, .clothing, .club, 
 .cn, .co, .codes, .coffee, .college, .cologne, .community, .company, .construction, 
@@ -72,7 +72,7 @@ These are the domain extensions that are supported by this script.
 .tools, .town, .toys, .tr, .training, .travel, .tv, .tw, .tz, .ua, .ug, .uk, .university, 
 .us, .uy, .black, .blue, .info, .kim, .pink, .red, .shiksha, .uz, .vacations, .vc, .ve,
 .vegas, .ventures, .vg, .viajes, .villas, .vision, .vodka, .voting, .voyage, .vu, .wang,
-.watch, .wed, .wf, .wien, .wiki, .works, .ws, .xxx, .xyz, .yt, .zm, .zone, 
+.watch, .wed, .wf, .wien, .wiki, .works, .ws, .xxx, .xyz, .yt, .za, .zm, .zone, 
 ```
 
 ## Missing Domain Extensions
@@ -85,7 +85,7 @@ Due to the fact that a lot of the domain extentions listed on the IANA website, 
 .lk, .lr, .ls, .mc, .mf, .mh, .mil, .mm, .moe, .mq, .mr, .mt, .mv, .mw, .mz, .nagoya, .ne, 
 .neustar, .ni, .np, .nr, .nyc, .okinawa, .pa, .pg, .ph, .pk, .pn, .ps, .py, .qpon, .ren, 
 .rw, .sd, .sj, .sl, .sohu, .sr, .ss, .sv, .sz, .td, .tg, .tj, .tokyo, .tp, .trade, .tt, 
-.um, .uno, .va, .vi, .vi, .vn, .webcam, .ye, .yokohoma, .za, .ryukyu, .meet, .vote, .lc, 
+.um, .uno, .va, .vi, .vi, .vn, .webcam, .ye, .yokohoma, .ryukyu, .meet, .vote, .lc, 
 .voto, .wed, .zw
 ```
 If you know the whois server for any of these please feel free to create an issue with an update.
