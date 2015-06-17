@@ -383,7 +383,8 @@ class AvailabilityService
         "yt" => array("whois.nic.yt","No entries found in the AFNIC Database."),
         "ryukyu" => array("whois.nic.ryukyu", "DOMAIN NOT FOUND"),
         "zm" => array("whois.nic.zm","Domain Status: No Object Found"),
-        "zone" => array( "whois.donuts.co","Domain not found.")
+        "zone" => array( "whois.donuts.co","Domain not found."),
+	"za" => array("whois.co.za","Available")
     );
 
 
