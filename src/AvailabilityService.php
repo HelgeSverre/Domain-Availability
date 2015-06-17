@@ -64,6 +64,7 @@ class AvailabilityService
         "az" => array("whois.az","MATCH"), // not responding
         "bar" => array("whois.nic.bar","DOMAIN NOT FOUND"),
         "bargains" => array("whois.donuts.co","Domain not found."),
+        "bayern" => array("whois-dub.mm-registry.com","Status: Not Registered"),
         "be" => array("whois.dns.be","Status:	AVAILABLE"),
         "berlin" => array("whois.nic.berlin","% No match"),
         "bg" => array("whois.register.bg","does not exist in database!"),
