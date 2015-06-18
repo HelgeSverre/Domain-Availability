@@ -6,4 +6,5 @@ php:
   - hhvm
   - nightly
 
-phpunit tests/
+script:
+- phpunit tests/TldExtractionTest.php
