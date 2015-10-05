@@ -47,7 +47,7 @@ These are the domain extensions that are supported by this script.
 .com, .net, .org, .co.uk, .io, .computer, .ac, .academy, .actor, .ae, .aero, .af, .ag, 
 .agency, .ai, .am, .archi, .arpa, .as, .asia, .associates, .at, .au, .aw, .ax, .az, .bar, 
 .bargains, .bayern, .be, .berlin, .bg, .bi, .bike, .biz, .bj, .blackfriday, .bn, .boutique, .build, 
-.builders, .bw, .by, .ca, .cab, .camera, .camp, .captial, .cards, .careers, .cat, .catering, 
+.builders, .bw, .by, .ca, .cab, .camera, .camp, .capital, .cards, .careers, .cat, .catering, 
 .cc, .center, .ceo, .cf, .ch, .cheap, .christmas, .ci, .cl, .cleaning, .clothing, .club, 
 .cn, .co, .codes, .coffee, .college, .cologne, .community, .company, .construction, 
 .contractors, .cooking, .cool, .coop, .country, .cruises, .cx, .cz, .dating, .de, 
