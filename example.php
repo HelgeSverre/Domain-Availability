@@ -1,23 +1,14 @@
 <?php
 
 
+use Helge\Loader\JsonServerLoader;
 use Helge\Service\DomainAvailability;
+use Helge\Client\SimpleWhoisClient;
 
 require './vendor/autoload.php';
 
-$whoisClient = new Helge\Client\SimpleWhoisClient();
-$whoisClient->setPort(43);
-$whoisClient->setServer("asdasdasd");
+$whoisClient = new SimpleWhoisClient();
+$loader = new JsonServerLoader("data/servers.json");
+$service = new DomainAvailability($whoisClient, $loader);
 
-$test = $whoisClient->query("helgesverre.net");
-var_dump($test);
-
-$availabilityService = new DomainAvailability($whoisClient);
-
-echo "\n---------------\n";
-var_dump($availabilityService->isAvailable("helgesverre.com"));
-var_dump($availabilityService->isAvailable("helgesverre.com", true));
-echo "\n---------------\n";
-var_dump($availabilityService->isAvailable("asdasdasdfggggggg222e.com"));
-var_dump($availabilityService->isAvailable("asdasdasdfggggggg222e.com", true));
-echo "\n---------------\n";
+var_dump($service->isAvailable("helgesverre.net"));

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ba15debe780a3f48ed0e5acc33b5421c",
-    "content-hash": "bbe1450344467ad07696c857659a5ebd",
+    "hash": "801da1769e55e47ce6bb6ed90a5785de",
+    "content-hash": "6020b155e54dc781d9d90d22b1aa7df4",
     "packages": [
         {
             "name": "jeremykendall/php-domain-parser",

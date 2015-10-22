@@ -21,6 +21,7 @@
   "autoload": {
     "psr-4": {
       "Helge\\Service\\": "src/Service",
+      "Helge\\Loader\\": "src/Loader",
       "Helge\\Client\\": "src/Client"
     }
   }

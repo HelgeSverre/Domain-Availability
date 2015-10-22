@@ -4,6 +4,7 @@
 namespace Helge\Service;
 
 use Helge\Client\WhoisClientInterface;
+use Helge\Loader\ServerLoaderInterface;
 use Pdp\Parser;
 use Pdp\PublicSuffixListManager;
 
@@ -11,17 +12,14 @@ class DomainAvailability
 {
 
     protected $whoisClient;
+    protected $loader;
     protected $servers;
 
-    public function __construct(WhoisClientInterface $whoisClient, $serverList = "src/data/servers.json")
+    public function __construct(WhoisClientInterface $whoisClient, ServerLoaderInterface $loader)
     {
         $this->whoisClient = $whoisClient;
-
-        // TODO(22 okt 2015) ~ Helge: put in loader class
-        if (file_exists($serverList)) {
-            $serverListJson = file_get_contents($serverList);
-            $this->servers = json_decode($serverListJson, true);
-        }
+        $this->loader = $loader;
+        $this->servers = $loader->load();
     }
 
 
@@ -44,6 +42,7 @@ class DomainAvailability
                 return false;
             }
         }
+
 
         $domainInfo = $this->parse($domain);
 
@@ -75,6 +74,7 @@ class DomainAvailability
 
         // Check if the WHOIS data contains the "not found"-string
         if (strpos($whoisData, $whoisServerInfo["not_found"]) !== false) {
+            // The domain is available
             return true;
         }
 
@@ -84,7 +84,8 @@ class DomainAvailability
 
 
     /**
-     * Wrapper around Jeremy Kendall's PHP Domain Parser that parses the domain/url passed to the function and returns the Tld and Valid domain
+     * Wrapper around Jeremy Kendall's PHP Domain Parser that parses the
+     * domain/url passed to the function and returns the Tld and Valid domain
      * @param $domain
      * @throws \InvalidArgumentException when the tld is not valid
      * @return array returns an associative array with the domain and tld
