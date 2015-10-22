@@ -11,7 +11,7 @@ or
 ```
 {
     "require": {
-        "helgesverre/domain-availability": "0.2.0"
+        "helgesverre/domain-availability": "~0.2.0"
     }
 }
 ```
