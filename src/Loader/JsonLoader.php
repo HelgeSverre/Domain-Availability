@@ -9,7 +9,7 @@
 namespace Helge\Loader;
 
 
-class JsonServerLoader implements ServerLoaderInterface
+class JsonLoader implements LoaderInterface
 {
 
     protected $path;

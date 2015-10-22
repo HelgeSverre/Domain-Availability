@@ -2,7 +2,7 @@
 
 namespace Helge\Loader;
 
-interface ServerLoaderInterface
+interface LoaderInterface
 {
 
     public function __construct($path);

@@ -4,7 +4,7 @@
 namespace Helge\Service;
 
 use Helge\Client\WhoisClientInterface;
-use Helge\Loader\ServerLoaderInterface;
+use Helge\Loader\LoaderInterface;
 use Pdp\Parser;
 use Pdp\PublicSuffixListManager;
 
@@ -15,7 +15,7 @@ class DomainAvailability
     protected $loader;
     protected $servers;
 
-    public function __construct(WhoisClientInterface $whoisClient, ServerLoaderInterface $loader)
+    public function __construct(WhoisClientInterface $whoisClient, LoaderInterface $loader)
     {
         $this->whoisClient = $whoisClient;
         $this->loader = $loader;
@@ -97,7 +97,7 @@ class DomainAvailability
 
         // First check if the suffix is actually valid
         if (!$parser->isSuffixValid($domain)) {
-            throw new \InvalidArgumentException("Invalid domain");
+            throw new \InvalidArgumentException("Invalid TLD");
         }
 
         $components = [];

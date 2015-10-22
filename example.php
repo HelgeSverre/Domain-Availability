@@ -1,14 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Domain Availability Checker</title>
+</head>
+<body>
 <?php
-
-
-use Helge\Loader\JsonServerLoader;
-use Helge\Service\DomainAvailability;
-use Helge\Client\SimpleWhoisClient;
 
 require './vendor/autoload.php';
 
-$whoisClient = new SimpleWhoisClient();
-$loader = new JsonServerLoader("data/servers.json");
-$service = new DomainAvailability($whoisClient, $loader);
+use Helge\Loader\JsonLoader;
+use Helge\Client\SimpleWhoisClient;
+use Helge\Service\DomainAvailability;
 
-var_dump($service->isAvailable("helgesverre.net"));
+$whoisClient    = new SimpleWhoisClient();
+$dataLoader     = new JsonLoader("src/data/servers.json");
+
+$service        = new DomainAvailability($whoisClient, $dataLoader);
+
+if (isset($_GET["domain"])) {
+    if ($service->isAvailable($_GET["domain"])) {
+        echo "<h2 style='color:green;'>Available</h2>";
+    } else {
+        echo "<h2 style='color:red;'>Unavailable</h2>";
+    }
+}
+
+?>
+
+<form action="" method="get">
+    <label for="domain"></label>
+    <input type="text" name="domain" id="domain">
+    <input type="submit" value="Go">
+</form>
+</body>
+</html>
+
