@@ -1,19 +1,18 @@
 <?php
-require('vendor/autoload.php');
-$service = new HelgeSverre\DomainAvailability\AvailabilityService(true);
 
-$testDomains = array(
-    'google.com',
-    'fasdf2342asdfcvcxv.org'
-);
+use HelgeSverre\Client\SimpleWhoisClient;
+use HelgeSverre\Parser\Php;
+use HelgeSverre\Service\DomainAvailability;
 
-foreach ($testDomains as $domain) {
-    $available = $service->isAvailable($domain);
 
-    if ($available) {
-        echo $domain." is not registered\n";
-    } else {
-        echo $domain." is registered\n";
-    }
+$parser = new Php(__DIR__ . "/src/data/serverList.php");
+$client = new SimpleWhoisClient();
+
+
+$service = new DomainAvailability($parser, $client);
+
+if ($service->isAvailable("helgesverre.me")) {
+    echo "yay!";
+} else {
+    echo "nay!";
 }
-

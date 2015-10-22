@@ -1,0 +1,1386 @@
+{
+  "com": {
+    "server": "whois.verisign-grs.com",
+    "not_found": "No match for "
+  },
+  "net": {
+    "server": "whois.verisign-grs.com",
+    "not_found": "No match for "
+  },
+  "org": {
+    "server": "whois.pir.org",
+    "not_found": "NOT FOUND"
+  },
+  "io": {
+    "server": "whois.nic.io",
+    "not_found": "is available for purchase"
+  },
+  "computer": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "ac": {
+    "server": "whois.nic.ac",
+    "not_found": "is available for purchase"
+  },
+  "academy": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "actor": {
+    "server": "whois.unitedtld.com",
+    "not_found": "Domain not found."
+  },
+  "ae": {
+    "server": "whois.aeda.net.ae",
+    "not_found": "No Data Found"
+  },
+  "aero": {
+    "server": "whois.aero",
+    "not_found": "NOT FOUND"
+  },
+  "af": {
+    "server": "whois.nic.af",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "ag": {
+    "server": "whois.nic.ag",
+    "not_found": "NOT FOUND"
+  },
+  "agency": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "ai": {
+    "server": "whois.ai",
+    "not_found": "If you would like to register this,\r\n         or any .ai domain"
+  },
+  "am": {
+    "server": "whois.amnic.net",
+    "not_found": "No match"
+  },
+  "archi": {
+    "server": "whois.ksregistry.net",
+    "not_found": "not found..."
+  },
+  "arpa": {
+    "server": "whois.iana.org",
+    "not_found": "% This query returned 0 objects."
+  },
+  "as": {
+    "server": "whois.nic.as",
+    "not_found": "Domain Status: Available"
+  },
+  "asia": {
+    "server": "whois.nic.asia",
+    "not_found": "NOT FOUND"
+  },
+  "associates": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "at": {
+    "server": "whois.nic.at",
+    "not_found": "% nothing found"
+  },
+  "au": {
+    "server": "whois.audns.net.au",
+    "not_found": "No Data Found"
+  },
+  "aw": {
+    "server": "whois.nic.aw",
+    "not_found": " is free"
+  },
+  "ax": {
+    "server": "whois.ax",
+    "not_found": "No records matching "
+  },
+  "az": {
+    "server": "whois.az",
+    "not_found": "MATCH"
+  },
+  "bar": {
+    "server": "whois.nic.bar",
+    "not_found": "DOMAIN NOT FOUND"
+  },
+  "bargains": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "be": {
+    "server": "whois.dns.be",
+    "not_found": "Status: AVAILABLE"
+  },
+  "berlin": {
+    "server": "whois.nic.berlin",
+    "not_found": "% No match"
+  },
+  "bg": {
+    "server": "whois.register.bg",
+    "not_found": "does not exist in database!"
+  },
+  "bi": {
+    "server": "whois1.nic.bi",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "bike": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "biz": {
+    "server": "whois.biz",
+    "not_found": "Not found: "
+  },
+  "bj": {
+    "server": "whois.nic.bj",
+    "not_found": "No records matching"
+  },
+  "blackfriday": {
+    "server": "whois.uniregistry.net",
+    "not_found": "is available for"
+  },
+  "bn": {
+    "server": "whois.bn",
+    "not_found": "No records matching"
+  },
+  "boutique": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "build": {
+    "server": "whois.nic.build",
+    "not_found": "No Data Found"
+  },
+  "builders": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "bw": {
+    "server": "whois.nic.net.bw",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "by": {
+    "server": "whois.cctld.by",
+    "not_found": "Object does not exist"
+  },
+  "ca": {
+    "server": "whois.cira.ca",
+    "not_found": "Domain status:         available"
+  },
+  "cab": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "camera": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "camp": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "captial": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "cards": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "careers": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "cat": {
+    "server": "whois.cat",
+    "not_found": "NOT FOUND."
+  },
+  "catering": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "cc": {
+    "server": "ccwhois.verisign-grs.com",
+    "not_found": "No match for"
+  },
+  "center": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "ceo": {
+    "server": "whois.nic.ceo",
+    "not_found": "Not found:"
+  },
+  "cf": {
+    "server": "whois.dot.cf",
+    "not_found": "Invalid query or domain name not known in Dot CF Domain Registry"
+  },
+  "ch": {
+    "server": "whois.nic.ch",
+    "not_found": "We do not have an entry in our database matching your query."
+  },
+  "cheap": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "christmas": {
+    "server": "whois.uniregistry.net",
+    "not_found": "is available for registration"
+  },
+  "ci": {
+    "server": "whois.nic.ci",
+    "not_found": "not found"
+  },
+  "cl": {
+    "server": "whois.nic.cl",
+    "not_found": ": no existe"
+  },
+  "cleaning": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "clothing": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "club": {
+    "server": "whois.nic.club",
+    "not_found": "Not found:"
+  },
+  "cn": {
+    "server": "whois.cnnic.cn",
+    "not_found": "no matching record."
+  },
+  "co": {
+    "server": "whois.nic.co",
+    "not_found": "Not found:"
+  },
+  "codes": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "coffee": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "college": {
+    "server": "whois.centralnic.com",
+    "not_found": "DOMAIN NOT FOUND"
+  },
+  "cologne": {
+    "server": "whois-fe1.pdt.cologne.tango.knipp.de",
+    "not_found": "no matching objects found"
+  },
+  "community": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "company": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "construction": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "contractors": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "cooking": {
+    "server": "whois-dub.mm-registry.com",
+    "not_found": "Status: Not Registered"
+  },
+  "cool": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "coop": {
+    "server": "whois.nic.coop",
+    "not_found": "No domain records were found to match"
+  },
+  "country": {
+    "server": "whois-dub.mm-registry.com",
+    "not_found": "Status: Not Registered"
+  },
+  "cruises": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "cx": {
+    "server": "whois.nic.cx",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "cz": {
+    "server": "whois.nic.cz",
+    "not_found": "No entries found."
+  },
+  "dating": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "de": {
+    "server": "whois.denic.de",
+    "not_found": "Status: free"
+  },
+  "democrat": {
+    "server": "whois.unitedtld.com",
+    "not_found": "Domain not found."
+  },
+  "desi": {
+    "server": "whois.ksregistry.net",
+    "not_found": "not found..."
+  },
+  "diamonds": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "directory": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "dk": {
+    "server": "whois.dk-hostmaster.dk",
+    "not_found": "No entries found for the selected source."
+  },
+  "dm": {
+    "server": "whois.nic.dm",
+    "not_found": "not found..."
+  },
+  "domains": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "dz": {
+    "server": "whois.nic.dz",
+    "not_found": "NO OBJECT FOUND!"
+  },
+  "ec": {
+    "server": "whois.nic.ec",
+    "not_found": "Status: Not Registered"
+  },
+  "edu": {
+    "server": "whois.educause.edu",
+    "not_found": "No Match"
+  },
+  "education": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "ee": {
+    "server": "whois.tld.ee",
+    "not_found": "No entries found."
+  },
+  "email": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "engineering": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "enterprises": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "equipment": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "es": {
+    "server": "whois.nic.es",
+    "not_found": "MATCH"
+  },
+  "estate": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "eu": {
+    "server": "whois.eu",
+    "not_found": "Status: AVAILABLE"
+  },
+  "eus": {
+    "server": "whois.eus.coreregistry.net",
+    "not_found": "no matching objects found"
+  },
+  "events": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "expert": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "exposed": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "farm": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "feedback": {
+    "server": "whois.centralnic.com",
+    "not_found": "DOMAIN NOT FOUND"
+  },
+  "fi": {
+    "server": "whois.fi",
+    "not_found": "Domain not found"
+  },
+  "fish": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "fishing": {
+    "server": "whois-dub.mm-registry.com",
+    "not_found": "Status: Not Registered"
+  },
+  "flights": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "florist": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "fo": {
+    "server": "whois.nic.fo",
+    "not_found": "No entries found."
+  },
+  "foo": {
+    "server": "domain-registry-whois.l.google.com",
+    "not_found": "Domain not found"
+  },
+  "foundation": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "fr": {
+    "server": "whois.nic.fr",
+    "not_found": "No entries found"
+  },
+  "frogans": {
+    "server": "whois-frogans.nic.fr",
+    "not_found": "Requested Domain cannot be found"
+  },
+  "futbol": {
+    "server": "whois.unitedtld.com",
+    "not_found": "Domain not found."
+  },
+  "ga": {
+    "server": "whois.gal.coreregistry.net",
+    "not_found": "no matching objects found"
+  },
+  "gal": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "gd": {
+    "server": "whois.nic.gd",
+    "not_found": "not found..."
+  },
+  "gg": {
+    "server": "whois.gg",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "gi": {
+    "server": "whois2.afilias-grs.net",
+    "not_found": "NOT FOUND"
+  },
+  "gift": {
+    "server": "whois.uniregistry.net",
+    "not_found": "is available for registration"
+  },
+  "gl": {
+    "server": "whois.nic.gl",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "glass": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "gop": {
+    "server": "whois-cl01.mm-registry.com",
+    "not_found": "Status: Not Registered"
+  },
+  "gov": {
+    "server": "whois.dotgov.gov",
+    "not_found": "MATCH"
+  },
+  "graphics": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "gripe": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "gs": {
+    "server": "whois.nic.gs",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "guitars": {
+    "server": "whois.uniregistry.net",
+    "not_found": "is available for registration"
+  },
+  "guru": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "gy": {
+    "server": "whois.registry.gy",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "haus": {
+    "server": "whois.unitedtld.com",
+    "not_found": "Domain not found."
+  },
+  "hk": {
+    "server": "whois.hkirc.hk",
+    "not_found": "The domain has not been registered."
+  },
+  "hn": {
+    "server": "whois.nic.hn",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "holiday": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "horse": {
+    "server": "whois-dub.mm-registry.com",
+    "not_found": "Status: Not Registered"
+  },
+  "house": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "hr": {
+    "server": "whois.dns.hr",
+    "not_found": "ERROR: no entries found"
+  },
+  "ht": {
+    "server": "whois.nic.ht",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "hu": {
+    "server": "whois.nic.hu",
+    "not_found": "No match"
+  },
+  "id": {
+    "server": "whois.pandi.or.id",
+    "not_found": "DOMAIN NOT FOUND"
+  },
+  "ie": {
+    "server": "whois.domainregistry.ie",
+    "not_found": "Not Registered"
+  },
+  "il": {
+    "server": "whois.isoc.org.il",
+    "not_found": "No data was found to match the request criteria."
+  },
+  "im": {
+    "server": "whois.nic.im",
+    "not_found": "was not found."
+  },
+  "immobilien": {
+    "server": "whois.unitedtld.com",
+    "not_found": "Domain not found."
+  },
+  "in": {
+    "server": "whois.inregistry.net",
+    "not_found": "NOT FOUND"
+  },
+  "industries": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "institute": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "int": {
+    "server": "whois.iana.org",
+    "not_found": "This query returned 0 objects."
+  },
+  "international": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "iq": {
+    "server": "whois.cmc.iq",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "ir": {
+    "server": "whois.nic.ir",
+    "not_found": "No entries found in the selected"
+  },
+  "is": {
+    "server": "whois.isnic.is",
+    "not_found": "No entries found for query"
+  },
+  "it": {
+    "server": "whois.nic.it",
+    "not_found": "Status:             AVAILABLE"
+  },
+  "je": {
+    "server": "whois.je",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "jobs": {
+    "server": "jobswhois.verisign-grs.com",
+    "not_found": "No match for"
+  },
+  "jp": {
+    "server": "whois.jprs.jp",
+    "not_found": "No match!!"
+  },
+  "kaufen": {
+    "server": "whois.unitedtld.com",
+    "not_found": "Domain not found."
+  },
+  "ke": {
+    "server": "whois.kenic.or.ke",
+    "not_found": "Status: Not Registered"
+  },
+  "kg": {
+    "server": "whois.domain.kg",
+    "not_found": "Data not found. This domain is available for registration."
+  },
+  "ki": {
+    "server": "whois.nic.ki",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "kitchen": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "kiwi": {
+    "server": "whois.dot-kiwi.com",
+    "not_found": "Status: Not Registered"
+  },
+  "koeln": {
+    "server": "whois-fe1.pdt.koeln.tango.knipp.de",
+    "not_found": "no matching objects found"
+  },
+  "kr": {
+    "server": "whois.kr",
+    "not_found": "Above domain name is not registered to KRNIC."
+  },
+  "kz": {
+    "server": "whois.nic.kz",
+    "not_found": "Nothing found for this query."
+  },
+  "la": {
+    "server": "whois.nic.la",
+    "not_found": "DOMAIN NOT FOUND"
+  },
+  "land": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "lease": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "li": {
+    "server": "whois.nic.li",
+    "not_found": "We do not have an entry in our database matching your query"
+  },
+  "lighting": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "limo": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "link": {
+    "server": "whois.uniregistry.net",
+    "not_found": "is available for registration"
+  },
+  "london": {
+    "server": "whois-lon.mm-registry.com",
+    "not_found": "Status: Not Registered"
+  },
+  "lt": {
+    "server": "whois.domreg.lt",
+    "not_found": "Status:          available"
+  },
+  "lu": {
+    "server": "whois.dns.lu",
+    "not_found": "No such domain"
+  },
+  "luxury": {
+    "server": "whois.nic.luxury",
+    "not_found": "No Data Found"
+  },
+  "lv": {
+    "server": "whois.nic.lv",
+    "not_found": "Status: free"
+  },
+  "ly": {
+    "server": "whois.nic.ly",
+    "not_found": "Not found"
+  },
+  "ma": {
+    "server": "whois.iam.net.ma",
+    "not_found": "No Objects Found"
+  },
+  "management": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "mango": {
+    "server": "whois.mango.coreregistry.net",
+    "not_found": "no matching objects found"
+  },
+  "marketing": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "md": {
+    "server": "whois.nic.md",
+    "not_found": "No match for"
+  },
+  "me": {
+    "server": "whois.nic.me",
+    "not_found": "NOT FOUND"
+  },
+  "media": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "menu": {
+    "server": "whois.nic.menu",
+    "not_found": "No Data Found"
+  },
+  "mg": {
+    "server": "whois.nic.mg",
+    "not_found": "Domain Status: Available"
+  },
+  "miami": {
+    "server": "whois-dub.mm-registry.com",
+    "not_found": "Status: Not Registered"
+  },
+  "mk": {
+    "server": "whois.marnet.mk",
+    "not_found": "no entries found"
+  },
+  "ml": {
+    "server": "whois.dot.ml",
+    "not_found": "domain name not known"
+  },
+  "mn": {
+    "server": "whois.nic.mn",
+    "not_found": "MATCH"
+  },
+  "mo": {
+    "server": "whois.monic.mo",
+    "not_found": "No match for"
+  },
+  "mobi": {
+    "server": "whois.dotmobiregistry.net",
+    "not_found": "NOT FOUND"
+  },
+  "moda": {
+    "server": "whois.unitedtld.com",
+    "not_found": "Domain not found."
+  },
+  "monash": {
+    "server": "whois.nic.monash",
+    "not_found": "No Data Found"
+  },
+  "mp": {
+    "server": "whois.nic.mp",
+    "not_found": "MATCH"
+  },
+  "ms": {
+    "server": "whois.nic.ms",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "mu": {
+    "server": "whois.nic.mu",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "museum": {
+    "server": "whois.museum",
+    "not_found": "NOT FOUND."
+  },
+  "mx": {
+    "server": "whois.mx",
+    "not_found": "Object_Not_Found"
+  },
+  "my": {
+    "server": "whois.domainregistry.my",
+    "not_found": "does not exist in database"
+  },
+  "na": {
+    "server": "whois.na-nic.com.na",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "name": {
+    "server": "whois.nic.name",
+    "not_found": "No match for"
+  },
+  "nc": {
+    "server": "whois.nc",
+    "not_found": "No entries found in the .nc database"
+  },
+  "nf": {
+    "server": "whois.nic.nf",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "ng": {
+    "server": "whois.nic.net.ng",
+    "not_found": "Domain Status: Available"
+  },
+  "ninja": {
+    "server": "whois.unitedtld.com",
+    "not_found": "Domain not found."
+  },
+  "nl": {
+    "server": "whois.domain-registry.nl",
+    "not_found": "is free"
+  },
+  "no": {
+    "server": "whois.norid.no",
+    "not_found": "% No match"
+  },
+  "nu": {
+    "server": "whois.iis.nu",
+    "not_found": "not found."
+  },
+  "nz": {
+    "server": "whois.srs.net.nz",
+    "not_found": "query_status: 260 Will be Available"
+  },
+  "om": {
+    "server": "whois.registry.om",
+    "not_found": "No Data Found"
+  },
+  "onl": {
+    "server": "whois.afilias-srs.net",
+    "not_found": "NOT FOUND"
+  },
+  "paris": {
+    "server": "whois-paris.nic.fr",
+    "not_found": "Requested Domain cannot be found"
+  },
+  "partners": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "parts": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "pe": {
+    "server": "kero.yachay.pe",
+    "not_found": "Status: Not Registered"
+  },
+  "pf": {
+    "server": "whois.registry.pf",
+    "not_found": "Domain unknown"
+  },
+  "photo": {
+    "server": "whois.uniregistry.net",
+    "not_found": "is available for registration"
+  },
+  "photography": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "photos": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "pics": {
+    "server": "whois.uniregistry.net",
+    "not_found": "is available for registration"
+  },
+  "pictures": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "pl": {
+    "server": "whois.dns.pl",
+    "not_found": "No information available"
+  },
+  "plumbing": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "pm": {
+    "server": "whois.nic.pm",
+    "not_found": "No entries found"
+  },
+  "post": {
+    "server": "whois.dotpostregistry.net",
+    "not_found": "NOT FOUND"
+  },
+  "pr": {
+    "server": "whois.nic.pr",
+    "not_found": "is not registered."
+  },
+  "pro": {
+    "server": "whois.dotproregistry.net",
+    "not_found": "NOT FOUND"
+  },
+  "productions": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "properties": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "pt": {
+    "server": "whois.dns.pt",
+    "not_found": "no match"
+  },
+  "pub": {
+    "server": "whois.unitedtld.com",
+    "not_found": "Domain not found."
+  },
+  "pw": {
+    "server": "whois.nic.pw",
+    "not_found": "DOMAIN NOT FOUND"
+  },
+  "qa": {
+    "server": "whois.registry.qa",
+    "not_found": "No Data Found"
+  },
+  "quebec": {
+    "server": "whois.quebec.rs.corenic.net",
+    "not_found": "no matching objects found"
+  },
+  "re": {
+    "server": "whois.nic.re",
+    "not_found": "No entries found"
+  },
+  "recipes": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "reisen": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "rentals": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "repair": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "report": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "rest": {
+    "server": "whois.centralnic.com",
+    "not_found": "DOMAIN NOT FOUND"
+  },
+  "reviews": {
+    "server": "whois.unitedtld.com",
+    "not_found": "Domain not found."
+  },
+  "rich": {
+    "server": "whois.afilias-srs.net",
+    "not_found": "NOT FOUND"
+  },
+  "ro": {
+    "server": "whois.rotld.ro",
+    "not_found": "No entries found"
+  },
+  "rocks": {
+    "server": "whois.unitedtld.com",
+    "not_found": "Domain not found."
+  },
+  "rodeo": {
+    "server": "whois-dub.mm-registry.com",
+    "not_found": "Status: Not Registered"
+  },
+  "rs": {
+    "server": "whois.rnids.rs",
+    "not_found": "Domain is not registered"
+  },
+  "ru": {
+    "server": "whois.tcinet.ru",
+    "not_found": "No entries found"
+  },
+  "ruhr": {
+    "server": "whois.nic.ruhr",
+    "not_found": "no matching objects found"
+  },
+  "sa": {
+    "server": "whois.nic.net.sa",
+    "not_found": "No Match for"
+  },
+  "saarland": {
+    "server": "whois.ksregistry.net",
+    "not_found": "not found..."
+  },
+  "sb": {
+    "server": "whois.nic.net.sb",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "sc": {
+    "server": "whois2.afilias-grs.net",
+    "not_found": "NOT FOUND"
+  },
+  "se": {
+    "server": "whois.iis.se",
+    "not_found": "not found."
+  },
+  "services": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "sexy": {
+    "server": "whois.uniregistry.net",
+    "not_found": "is available for"
+  },
+  "sg": {
+    "server": "whois.sgnic.sg",
+    "not_found": "Domain Not Found"
+  },
+  "sh": {
+    "server": "whois.nic.sh",
+    "not_found": "is available for purchase"
+  },
+  "shoes": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "si": {
+    "server": "whois.arnes.si",
+    "not_found": "No entries found"
+  },
+  "singles": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "sk": {
+    "server": "whois.sk-nic.sk",
+    "not_found": "Not found."
+  },
+  "sm": {
+    "server": "whois.nic.sm",
+    "not_found": "No entries found."
+  },
+  "sn": {
+    "server": "whois.nic.sn",
+    "not_found": "NOT FOUND"
+  },
+  "so": {
+    "server": "whois.nic.so",
+    "not_found": "DOMAIN NOT FOUND"
+  },
+  "social": {
+    "server": "whois.unitedtld.com",
+    "not_found": "Domain not found."
+  },
+  "solar": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "solutions": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "soy": {
+    "server": "domain-registry-whois.l.google.com",
+    "not_found": "Domain not found"
+  },
+  "st": {
+    "server": "whois.nic.st",
+    "not_found": "No entries found"
+  },
+  "su": {
+    "server": "whois.tcinet.ru",
+    "not_found": "No entries found"
+  },
+  "supplies": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "supply": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "support": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "sx": {
+    "server": "whois.sx",
+    "not_found": "Status: AVAILABLE"
+  },
+  "sy": {
+    "server": "whois.tld.sy",
+    "not_found": "Domain Status: Available"
+  },
+  "systems": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "tattoo": {
+    "server": "whois.uniregistry.net",
+    "not_found": "is available for registration"
+  },
+  "tc": {
+    "server": "whois.meridiantld.net",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "technology": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "tel": {
+    "server": "whois.nic.tel",
+    "not_found": "Not found:"
+  },
+  "tf": {
+    "server": "whois.nic.tf",
+    "not_found": "No entries found"
+  },
+  "th": {
+    "server": "whois.thnic.co.th",
+    "not_found": "No match for"
+  },
+  "tienda": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "tips": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "tk": {
+    "server": "whois.dot.tk",
+    "not_found": "Invalid query or domain name not known"
+  },
+  "tl": {
+    "server": "whois.nic.tl",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "tm": {
+    "server": "whois.nic.tm",
+    "not_found": "is available for purchase"
+  },
+  "tn": {
+    "server": "whois.ati.tn",
+    "not_found": "NO OBJECT FOUND!"
+  },
+  "to": {
+    "server": "whois.tonic.to",
+    "not_found": "No match for"
+  },
+  "today": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "tools": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "town": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "toys": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "tr": {
+    "server": "whois.nic.tr",
+    "not_found": "Invalid input"
+  },
+  "training": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "travel": {
+    "server": "whois.nic.travel",
+    "not_found": "Not found:"
+  },
+  "tv": {
+    "server": "tvwhois.verisign-grs.com",
+    "not_found": "No match for"
+  },
+  "tw": {
+    "server": "whois.twnic.net.tw",
+    "not_found": "No Found"
+  },
+  "tz": {
+    "server": "whois.tznic.or.tz",
+    "not_found": "No entries found."
+  },
+  "ua": {
+    "server": "whois.ua",
+    "not_found": "No entries found for"
+  },
+  "ug": {
+    "server": "whois.co.ug",
+    "not_found": "No entries found for the selected source(s)."
+  },
+  "uk": {
+    "server": "whois.nic.uk",
+    "not_found": "This domain name has not been registered."
+  },
+  "university": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "us": {
+    "server": "whois.nic.us",
+    "not_found": "Not found"
+  },
+  "uy": {
+    "server": "whois.nic.org.uy",
+    "not_found": "No match for"
+  },
+  "black": {
+    "server": "whois.afilias.net",
+    "not_found": "NOT FOUND"
+  },
+  "blue": {
+    "server": "whois.afilias.net",
+    "not_found": "NOT FOUND"
+  },
+  "info": {
+    "server": "whois.afilias.net",
+    "not_found": "NOT FOUND"
+  },
+  "kim": {
+    "server": "whois.afilias.net",
+    "not_found": "NOT FOUND"
+  },
+  "pink": {
+    "server": "whois.afilias.net",
+    "not_found": "NOT FOUND"
+  },
+  "red": {
+    "server": "whois.afilias.net",
+    "not_found": "NOT FOUND"
+  },
+  "shiksha": {
+    "server": "whois.afilias.net",
+    "not_found": "NOT FOUND"
+  },
+  "uz": {
+    "server": "whois.cctld.uz",
+    "not_found": "not found in database"
+  },
+  "vacations": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "vc": {
+    "server": "whois2.afilias-grs.net",
+    "not_found": "NOT FOUND"
+  },
+  "ve": {
+    "server": "whois.nic.ve",
+    "not_found": "No match for"
+  },
+  "vegas": {
+    "server": "whois.afilias-srs.net",
+    "not_found": "NOT FOUND"
+  },
+  "ventures": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "vg": {
+    "server": "ccwhois.ksregistry.net",
+    "not_found": "not found..."
+  },
+  "viajes": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "villas": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "vision": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "vodka": {
+    "server": "whois-dub.mm-registry.com",
+    "not_found": "Status: Not Registered"
+  },
+  "voting": {
+    "server": "whois.voting.tld-box.at",
+    "not_found": "No match"
+  },
+  "voyage": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "vu": {
+    "server": "vunic.vu",
+    "not_found": "is not valid!"
+  },
+  "wang": {
+    "server": "whois.gtld.knet.cn",
+    "not_found": "No match"
+  },
+  "watch": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "wed": {
+    "server": "whois.nic.wed",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "wf": {
+    "server": "whois.nic.wf",
+    "not_found": "No entries found in the AFNIC Database."
+  },
+  "wien": {
+    "server": "whois.nic.wien",
+    "not_found": "No match"
+  },
+  "wiki": {
+    "server": "whois.nic.wiki",
+    "not_found": "DOMAIN NOT FOUND"
+  },
+  "works": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  },
+  "ws": {
+    "server": "whois.website.ws",
+    "not_found": "No match for"
+  },
+  "xxx": {
+    "server": "whois.nic.xxx",
+    "not_found": "NOT FOUND"
+  },
+  "xyz": {
+    "server": "whois.nic.xyz",
+    "not_found": "DOMAIN NOT FOUND"
+  },
+  "yt": {
+    "server": "whois.nic.yt",
+    "not_found": "No entries found in the AFNIC Database."
+  },
+  "ryukyu": {
+    "server": "whois.nic.ryukyu",
+    "not_found": "DOMAIN NOT FOUND"
+  },
+  "zm": {
+    "server": "whois.nic.zm",
+    "not_found": "Domain Status: No Object Found"
+  },
+  "zone": {
+    "server": "whois.donuts.co",
+    "not_found": "Domain not found."
+  }
+}
