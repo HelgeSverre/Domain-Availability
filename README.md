@@ -6,7 +6,15 @@ A PHP library used to check domain name availability.
 ```
 composer -s dev helgesverre/domain-availability
 ```
+or 
 
+```
+{
+    "require": {
+        "helgesverre/domain-availability": "0.2.0"
+    }
+}
+```
 ## Simple Usage:
 
 ```php
