@@ -1,18 +1,23 @@
 <?php
 
-use HelgeSverre\Client\SimpleWhoisClient;
-use HelgeSverre\Parser\Php;
-use HelgeSverre\Service\DomainAvailability;
 
+use Helge\Service\DomainAvailability;
 
-$parser = new Php(__DIR__ . "/src/data/serverList.php");
-$client = new SimpleWhoisClient();
+require './vendor/autoload.php';
 
+$whoisClient = new Helge\Client\SimpleWhoisClient();
+$whoisClient->setPort(43);
+$whoisClient->setServer("asdasdasd");
 
-$service = new DomainAvailability($parser, $client);
+$test = $whoisClient->query("helgesverre.net");
+var_dump($test);
 
-if ($service->isAvailable("helgesverre.me")) {
-    echo "yay!";
-} else {
-    echo "nay!";
-}
+$availabilityService = new DomainAvailability($whoisClient);
+
+echo "\n---------------\n";
+var_dump($availabilityService->isAvailable("helgesverre.com"));
+var_dump($availabilityService->isAvailable("helgesverre.com", true));
+echo "\n---------------\n";
+var_dump($availabilityService->isAvailable("asdasdasdfggggggg222e.com"));
+var_dump($availabilityService->isAvailable("asdasdasdfggggggg222e.com", true));
+echo "\n---------------\n";

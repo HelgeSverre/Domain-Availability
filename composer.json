@@ -20,8 +20,8 @@
   },
   "autoload": {
     "psr-4": {
-      "HelgeSverre\\Service\\": "src/",
-      "HelgeSverre\\Client\\": "src/Client"
+      "Helge\\Service\\": "src/Service",
+      "Helge\\Client\\": "src/Client"
     }
   }
 }

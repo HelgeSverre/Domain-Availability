@@ -13,14 +13,14 @@ class DomainAvailability
     protected $whoisClient;
     protected $servers;
 
-    public function __construct(WhoisClientInterface $whoisClient, $serverList = "data/servers.json")
+    public function __construct(WhoisClientInterface $whoisClient, $serverList = "src/data/servers.json")
     {
         $this->whoisClient = $whoisClient;
 
-        // TODO(22 okt 2015) ~ Helge: putt in loader class
+        // TODO(22 okt 2015) ~ Helge: put in loader class
         if (file_exists($serverList)) {
             $serverListJson = file_get_contents($serverList);
-            $this->servers = json_decode($serverListJson);
+            $this->servers = json_decode($serverListJson, true);
         }
     }
 
@@ -49,37 +49,33 @@ class DomainAvailability
 
         if (!isset($this->servers[$domainInfo["tld"]])) {
             throw new \Exception("No WHOIS entry was found for that TLD");
+        }
 
-            $whoisServerInfo = $this->servers[$domainInfo["tld"]];
-
-
-            /**
-             * If for some reason you've added a WHOIS server running
-             * on a non-standard port, this will make sure we specify that
-             */
-            if (isset($whoisServerInfo["port"])) {
-                $this->whoisClient->setPort($whoisServerInfo["port"]);
-            }
-
-            // Fetch the WHOIS server from the serverlist
-            $this->whoisClient->setServer($whoisServerInfo["server"]);
-
-            // If the query fails, it returns false
-            if (!$this->whoisClient->query($domainInfo["domain"])) {
-                throw new \Exception("WHOIS Query failed");
-            }
-
-            // Fetch the response from the WHOIS server.
-            $whoisData = $this->whoisClient->getResponse();
-
-            // Check if the WHOIS data contains the "not found"-string
-            if (strpos($whoisData, $whoisServerInfo["not_found"]) !== false) {
-                return true;
-            }
+        $whoisServerInfo = $this->servers[$domainInfo["tld"]];
 
 
-        } else {
+        /**
+         * If for some reason you've added a WHOIS server running
+         * on a non-standard port, this will make sure we specify that
+         */
+        if (isset($whoisServerInfo["port"])) {
+            $this->whoisClient->setPort($whoisServerInfo["port"]);
+        }
 
+        // Fetch the WHOIS server from the serverlist
+        $this->whoisClient->setServer($whoisServerInfo["server"]);
+
+        // If the query fails, it returns false
+        if (!$this->whoisClient->query($domainInfo["domain"])) {
+            throw new \Exception("WHOIS Query failed");
+        }
+
+        // Fetch the response from the WHOIS server.
+        $whoisData = $this->whoisClient->getResponse();
+
+        // Check if the WHOIS data contains the "not found"-string
+        if (strpos($whoisData, $whoisServerInfo["not_found"]) !== false) {
+            return true;
         }
 
         // If we've come this far, the domain is not available.
