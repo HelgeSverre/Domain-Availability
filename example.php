@@ -30,12 +30,17 @@ $service = new DomainAvailability($whoisClient, $dataLoader);
             <td>Status</td>
             <td>
                 <?php
-                if (isset($_GET["domain"])) {
-                    if ($service->isAvailable($_GET["domain"])) {
-                        echo "<span style='color:green;'>Available</span>";
-                    } else {
-                        echo "<span style='color:red;'>Unavailable</span>";
+
+                try {
+                    if (isset($_GET["domain"])) {
+                        if ($service->isAvailable($_GET["domain"])) {
+                            echo "<span style='color:green;'>Available</span>";
+                        } else {
+                            echo "<span style='color:red;'>Unavailable</span>";
+                        }
                     }
+                } catch (\Exception $e) {
+                    echo $e->getMessage();
                 }
                 ?>
             </td>
