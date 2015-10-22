@@ -4,7 +4,7 @@ A PHP library used to check domain name availability.
 
 ## Installation
 ```
-composer create-project -s dev helgesverre/domain-availability
+composer -s dev helgesverre/domain-availability
 ```
 
 ## Simple Usage:
