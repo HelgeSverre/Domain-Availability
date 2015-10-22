@@ -19,8 +19,7 @@
   ],
   "support": {
     "email": "email@helgesverre.com",
-    "issues": "https://github.com/HelgeSverre/Domain-Availability/issues",
-    "docs": "https://helgesverre.com/docs/domain-availability"
+    "issues": "https://github.com/HelgeSverre/Domain-Availability/issues"
   },
   "require": {
     "php": ">=5.3",
