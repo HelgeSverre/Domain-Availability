@@ -1,44 +1,51 @@
-Domain Availability Script
-===================
+# Domain Availability Script
 
-[![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/helgesverre)
+A PHP library used to check domain name availability.
 
-A PHP Class used to check if a domain has been registered.
-
-Created to be fast and easy to use, modify and redistribute as you wish, credit me if appropriate.
-
-## Install with Composer:
+## Installation
 ```
-composer create-project -s dev cwd/domain-availability
+composer create-project -s dev helgesverre/domain-availability
 ```
 
-
-## Install manually
-
-1. Download the AvailabilityService.php file and place it "somewhere" in your project folder.
-2. Include it in your PHP file.
-3. Done.
-
-
-## Usage:
+## Simple Usage:
 
 ```php
 <?php
-require('vendor/autoload.php');
-$service = new HelgeSverre\DomainAvailability\AvailabilityService(true);
 
-$available = $service->isAvailable("helgesverre.com");
-if ($available) {
-    echo $domain." is not registered\n";
+require './vendor/autoload.php';
+
+use Helge\Loader\JsonLoader;
+use Helge\Client\SimpleWhoisClient;
+use Helge\Service\DomainAvailability;
+
+$whoisClient = new SimpleWhoisClient();
+$dataLoader = new JsonLoader("src/data/servers.json");
+
+$service = new DomainAvailability($whoisClient, $dataLoader);
+
+if ($service->isAvailable("helgesverre.com")) {
+    echo "Domain is available";
 } else {
-    echo $domain." is registered\n";
+    echo "Domain is already taken!";
 }
+
+
 ```
 
-or look at example.php for an example.
+or look at example.php for a more real world example.
+
+
+## Documentation
+
+More in-depth documentation of the library can be found on my website https://helgesverre.com/products/domain-availability
+
+ 
 
 ## Notes
-The WHOIS server array is incomplete and some data is missing, the most popular TLD's are working though, I will update these as I can, I suggest making your own array of whois server information so you know which TLD is available, for a full list of TLD's and WHOIS servers please go to the [IANA website](http://www.iana.org/domains/root/db)
+The WHOIS server array is incomplete and some data is missing, the most popular 
+TLD's are working though, I will update these as I can, I suggest making your 
+own array of whois server information so you know which TLD is available, for a 
+full list of TLD's and WHOIS servers please go to the [IANA website](http://www.iana.org/domains/root/db)
 
 ## Supported Domain Extensions
 These are the domain extensions that are supported by this script.
@@ -75,9 +82,11 @@ These are the domain extensions that are supported by this script.
 .watch, .wed, .wf, .wien, .wiki, .works, .ws, .xxx, .xyz, .yt, .za, .zm, .zone, 
 ```
 
-## Missing Domain Extensions
+## Unsupported Domain Extensions
 
-Due to the fact that a lot of the domain extentions listed on the IANA website, does not contain any information one which WHOIS server to use when querying for the domain information, the following domain extensions are not available (yet):
+Due to the fact that a lot of the domain extentions listed on the IANA website, 
+does not contain any information one which WHOIS server to use when querying for 
+the domain information, the following domain extensions are not available (yet):
 
 ```
 .dj, .do, .eg, .eh, .er, .et, .fj, .fk, .fm, .gallery, .gb, .ge, .gf, .gh, .gm, .gn, .gp,
@@ -92,15 +101,20 @@ If you know the whois server for any of these please feel free to create an issu
 
 
 ## Custom Integration Service!
-If you need to integrate this script into your website, but don't have the knowledge to do so, I offer an integration service, email me at [email@helgesverre.com](mailto:email@helgesverre.com) (or use my [contact form](https://helgesverre.com/contact.php))  with a description of what you need to integrate with and I will give you a quote for my time.
 
-I require 50% upfront payment for integration services.
+If you need to integrate this script into your website, but don't have the knowledge to do so, 
+I offer an integration service, email me at [email@helgesverre.com](mailto:email@helgesverre.com) 
+(or use my [contact form](https://helgesverre.com/contact))  with a description of what 
+you need to integrate with and I will give you a quote for my time.
+
 
 ## License
 
-![Creative Commons](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
-
-This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+This work is licensed under the MIT license.
 
 
-Code and research by [Helge Sverre](https://helgesverre.com)
+# Credits
+
+Research and code by [Helge Sverre](https://helgesverre.com)
+
+Domain Parser by [Jeremy Kendall](https://github.com/jeremykendall)
