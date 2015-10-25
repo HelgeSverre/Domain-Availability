@@ -27,7 +27,7 @@ use Helge\Client\SimpleWhoisClient;
 use Helge\Service\DomainAvailability;
 
 $whoisClient = new SimpleWhoisClient();
-$dataLoader = new JsonLoader("src/data/servers.json");
+$dataLoader = new JsonLoader("path/to/servers.json");
 
 $service = new DomainAvailability($whoisClient, $dataLoader);
 
@@ -50,10 +50,12 @@ More in-depth documentation of the library can be found on my website https://he
  
 
 ## Notes
-The WHOIS server array is incomplete and some data is missing, the most popular 
+The WHOIS server list is incomplete and some data is missing, the most popular 
 TLD's are working though, I will update these as I can, I suggest making your 
-own array of whois server information so you know which TLD is available, for a 
-full list of TLD's and WHOIS servers please go to the [IANA website](http://www.iana.org/domains/root/db)
+own list of whois servers and their "not found"-responses so you know which TLD is available, for a 
+full list of TLD's and WHOIS servers please go to the [IANA website](http://www.iana.org/domains/root/db).
+
+To check what they return when a domain is not found, you simply have to manually query the servers and check.
 
 ## Supported Domain Extensions
 These are the domain extensions that are supported by this script.
@@ -123,6 +125,5 @@ This work is licensed under the MIT license.
 
 # Credits
 
-Research and code by [Helge Sverre](https://helgesverre.com)
-
-Domain Parser by [Jeremy Kendall](https://github.com/jeremykendall)
+- Research and code by [Helge Sverre](https://helgesverre.com)
+- Domain Parser by [Jeremy Kendall](https://github.com/jeremykendall)
