@@ -1,10 +1,14 @@
-# Domain Availability Script
+# Domain Availability
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Software License][ico-license]](LICENSE.md)
+[![Total Downloads][ico-downloads]][link-downloads]
+
 
 A PHP library used to check domain name availability.
 
-## Installation
-```
-composer -s dev helgesverre/domain-availability
+## Install
+```bash
+$ composer -s dev helgesverre/domain-availability
 ```
 or 
 
@@ -15,7 +19,9 @@ or
     }
 }
 ```
-## Simple Usage:
+
+
+## Usage
 
 ```php
 <?php
@@ -118,12 +124,19 @@ I offer an integration service, email me at [email@helgesverre.com](mailto:email
 you need to integrate with and I will give you a quote for my time.
 
 
-## License
-
-This work is licensed under the MIT license.
-
-
 # Credits
 
 - Research and code by [Helge Sverre](https://helgesverre.com)
 - Domain Parser by [Jeremy Kendall](https://github.com/jeremykendall)
+
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+[ico-version]: https://img.shields.io/packagist/v/helgesverre/domain-availability.svg?style=flat-square
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/helgesverre/domain-availability.svg?style=flat-square
+
+[link-packagist]: https://packagist.org/packages/helgesverre/domain-availability
+[link-downloads]: https://packagist.org/packages/helgesverre/domain-availability
