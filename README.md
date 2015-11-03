@@ -129,6 +129,14 @@ you need to integrate with and I will give you a quote for my time.
 - Research and code by [Helge Sverre](https://helgesverre.com)
 - Domain Parser by [Jeremy Kendall](https://github.com/jeremykendall)
 
+## Note
+
+If you are getting the error:
+```
+Fatal error: Call to undefined function Pdp\idn_to_ascii()
+```
+Be sure to enable the php extension called ```intl``` as the domain parsing extension requires it!
+
 
 ## License
 
