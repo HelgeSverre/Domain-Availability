@@ -1,7 +1,6 @@
 {
   "name": "helgesverre/domain-availability",
   "homepage": "https://helgesverre.com/products/domain-availability",
-  "version": "0.2.0",
   "time": "2015-10-23",
   "description": "A PHP library for checking if a domain name is registered or not",
   "keywords": [
