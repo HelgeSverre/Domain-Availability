@@ -49,12 +49,6 @@ if ($service->isAvailable("helgesverre.com")) {
 or look at example.php for a more real world example.
 
 
-## Documentation
-
-More in-depth documentation of the library can be found on my website https://helgesverre.com/products/domain-availability
-
- 
-
 ## Notes
 The WHOIS server list is incomplete and some data is missing, the most popular 
 TLD's are working though, I will update these as I can, I suggest making your 
@@ -129,13 +123,21 @@ you need to integrate with and I will give you a quote for my time.
 - Research and code by [Helge Sverre](https://helgesverre.com)
 - Domain Parser by [Jeremy Kendall](https://github.com/jeremykendall)
 
-## Note
+## Notes
 
 If you are getting the error:
 ```
 Fatal error: Call to undefined function Pdp\idn_to_ascii()
 ```
 Be sure to enable the php extension called ```intl``` as the domain parsing extension requires it!
+
+If certain domain extensions are always or very often returning an unexpected value, please create an issue instead of emailing me in broken english, in your issue provide me with the following:
+
+- Your webhost
+- Link to your website where the error i happening
+- The extension and domain you are trying to check availability for
+
+Keep in mind that this library queries the WHOIS servers directly and if you "spam" them with requests, you **will** get temporary banned and that will cause the library to say the domain always is taken.
 
 
 ## License
