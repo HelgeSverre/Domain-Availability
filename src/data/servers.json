@@ -1382,5 +1382,13 @@
   "zone": {
     "server": "whois.donuts.co",
     "not_found": "Domain not found."
+  },
+  "co.uk": {
+    "server": "whois.nic.uk",
+    "not_found": "This domain name has not been registered."
+  },
+  "co.in": {
+    "server": "whois.inregistry.net",
+    "not_found": "NOT FOUND"
   }
 }
