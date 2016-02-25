@@ -8,7 +8,7 @@ A PHP library used to check domain name availability.
 
 ## Install
 ```bash
-$ composer -s dev helgesverre/domain-availability
+$ composer require --dev helgesverre/domain-availability
 ```
 or 
 
