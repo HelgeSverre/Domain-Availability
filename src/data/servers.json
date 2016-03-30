@@ -3,6 +3,10 @@
     "server": "whois.verisign-grs.com",
     "not_found": "No match for "
   },
+  "com.br": {
+    "server": "whois.nic.br",
+    "not_found": "No match for "
+  },  
   "net": {
     "server": "whois.verisign-grs.com",
     "not_found": "No match for "
