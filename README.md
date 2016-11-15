@@ -50,10 +50,10 @@ or look at example.php for a more real world example.
 
 
 ## Notes
-The WHOIS server list is incomplete and some data is missing, the most popular 
-TLD's are working though, I will update these as I can, I suggest making your 
-own list of whois servers and their "not found"-responses so you know which TLD is available, for a 
-full list of TLD's and WHOIS servers please go to the [IANA website](http://www.iana.org/domains/root/db).
+The WHOIS server list is incomplete and some data is missing. The most popular 
+TLDs are working, though, and I will update these as I can. I suggest making your 
+own list of whois servers and their "not found"-responses so you know which TLD is available. For a 
+full list of TLDs and WHOIS servers please go to the [IANA website](http://www.iana.org/domains/root/db).
 
 To check what they return when a domain is not found, you simply have to manually query the servers and check.
 
@@ -94,8 +94,8 @@ These are the domain extensions that are supported by this script.
 
 ## Unsupported Domain Extensions
 
-Due to the fact that a lot of the domain extentions listed on the IANA website, 
-does not contain any information one which WHOIS server to use when querying for 
+Due to the fact that a lot of the domain extensions listed on the IANA website 
+do not contain any information on which WHOIS server to use when querying for 
 the domain information, the following domain extensions are not available (yet):
 
 ```
@@ -113,8 +113,8 @@ If you know the whois server for any of these please feel free to create an issu
 ## Custom Integration Service!
 
 If you need to integrate this script into your website, but don't have the knowledge to do so, 
-I offer an integration service, email me at [email@helgesverre.com](mailto:email@helgesverre.com) 
-(or use my [contact form](https://helgesverre.com/contact))  with a description of what 
+I offer an integration service. Email me at [email@helgesverre.com](mailto:email@helgesverre.com) 
+(or use my [contact form](https://helgesverre.com/contact)) with a description of what 
 you need to integrate with and I will give you a quote for my time.
 
 
@@ -131,10 +131,10 @@ Fatal error: Call to undefined function Pdp\idn_to_ascii()
 ```
 Be sure to enable the php extension called ```intl``` as the domain parsing extension requires it!
 
-If certain domain extensions are always or very often returning an unexpected value, please create an issue instead of emailing me in broken english, in your issue provide me with the following:
+If certain domain extensions are always or very often returning an unexpected value, please create an issue instead of emailing me in broken english. In your issue provide me with the following:
 
 - Your webhost
-- Link to your website where the error i happening
+- Link to your website where the error is happening
 - The extension and domain you are trying to check availability for
 
 Keep in mind that this library queries the WHOIS servers directly and if you "spam" them with requests, you **will** get temporary banned and that will cause the library to say the domain always is taken.
