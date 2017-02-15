@@ -83,6 +83,17 @@ class DomainAvailability
     }
 
 
+
+    /**
+     * Returns an array of all TLDs supported by the service.
+     */
+    public function supportedTlds()
+    {
+        return array_keys($this->servers);
+    }
+
+
+
     /**
      * Wrapper around Jeremy Kendall's PHP Domain Parser that parses the
      * domain/url passed to the function and returns the Tld and Valid domain
