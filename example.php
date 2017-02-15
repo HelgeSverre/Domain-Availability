@@ -25,6 +25,19 @@ $service = new DomainAvailability($whoisClient, $dataLoader);
         <input type="submit" value="Go">
     </form>
 
+    <form style="margin: 10px;" action="" method="get">
+        <input type="text" name="tld" id="tld" value="list" hidden>
+        <input type="submit" value="List All TLDs">
+    </form>
+
+    <?php if (isset($_GET["tld"]) && $_GET["tld"] == "list" ) : ?>
+        <ul>
+            <?php foreach ($service->supportedTlds() as $tld) : ?>
+                <li><?= $tld; ?></li>
+            <?php endforeach; ?>
+        </ul>
+    <?php endif; ?>
+
     <table border="1" cellpadding="5">
         <tr>
             <td>Status</td>
