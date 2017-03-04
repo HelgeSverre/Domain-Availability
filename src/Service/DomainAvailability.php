@@ -14,6 +14,8 @@ class DomainAvailability
     protected $whoisClient;
     protected $loader;
     protected $servers;
+    
+    private $lastStatus = array();
 
     public function __construct(WhoisClientInterface $whoisClient, LoaderInterface $loader)
     {
@@ -21,11 +23,17 @@ class DomainAvailability
         $this->loader = $loader;
         $this->servers = $loader->load();
     }
+    
+    public function getLastStatus()
+    {
+        return $this->lastStatus;
+    }    
 
 
     public function isAvailable($domain, $quick = false)
     {
-
+        $this->lastStatus = array();
+        
         /**
          * If the response from gethostbyname() is anything else than the domain you
          * passed to the function, it means the domain is registered.
@@ -71,6 +79,18 @@ class DomainAvailability
 
         // Fetch the response from the WHOIS server.
         $whoisData = $this->whoisClient->getResponse();
+        
+        preg_match_all("/^.*status\:(?<status>(.*)).*$/im", $whoisData, $matches);
+        if ($matches &&
+            isset($matches['status'])
+        ) {
+            foreach ($matches['status'] as $status) {
+                $status = trim($status);
+                $status = explode(" ", $status);
+                $status = $status[0];
+                $this->lastStatus[] = $status;
+            }
+        }        
 
         // Check if the WHOIS data contains the "not found"-string
         if (strpos($whoisData, $whoisServerInfo["not_found"]) !== false) {
