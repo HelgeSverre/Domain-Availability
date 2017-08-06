@@ -3,8 +3,16 @@
 [![Software License][ico-license]](LICENSE.md)
 [![Total Downloads][ico-downloads]][link-downloads]
 
-
 A PHP library used to check domain name availability.
+
+
+## ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) READ THIS, SERIOUSLY:
+
+This is not a reliable way to check for domain availability on a large or even a medium scale, this will not handle your "webhosting business" or anything that requires a high level of data accuracy, if you need something like that, please use [WhoAPI](https://whoapi.com/) or [Namecheap's API](https://www.namecheap.com/support/api/intro.aspx).
+
+And no, I did **not build nor do i support** the WordPress plugin that is being sold on CodeCanyon which uses this package under the hood.
+
+
 
 ## Install
 ```bash
