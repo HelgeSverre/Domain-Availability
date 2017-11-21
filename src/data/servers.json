@@ -109,7 +109,7 @@
   },
   "be": {
     "server": "whois.dns.be",
-    "not_found": "Status: AVAILABLE"
+    "not_found": "Status:\tAVAILABLE\r\n"
   },
   "berlin": {
     "server": "whois.nic.berlin",
