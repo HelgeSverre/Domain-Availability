@@ -117,15 +117,6 @@ the domain information, the following domain extensions are not available (yet):
 ```
 If you know the whois server for any of these please feel free to create an issue with an update.
 
-
-## Custom Integration Service!
-
-If you need to integrate this script into your website, but don't have the knowledge to do so, 
-I offer an integration service. Email me at [email@helgesverre.com](mailto:email@helgesverre.com) 
-(or use my [contact form](https://helgesverre.com/contact)) with a description of what 
-you need to integrate with and I will give you a quote for my time.
-
-
 # Credits
 
 - Research and code by [Helge Sverre](https://helgesverre.com)
