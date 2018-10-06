@@ -1390,5 +1390,33 @@
   "co.in": {
     "server": "whois.inregistry.net",
     "not_found": "NOT FOUND"
+  },
+  "co.za": {
+    "server": "coza-whois.registry.net.za",
+    "not_found": "NOT FOUND"
+  },
+  "net.za": {
+    "server": "net-whois.registry.net.za",
+    "not_found": "NOT FOUND"
+  },
+  "org.za": {
+    "server": "org-whois.registry.net.za",
+    "not_found": "NOT FOUND"
+  },
+  "web.za": {
+    "server": "web-whois.registry.net.za",
+    "not_found": "NOT FOUND"
+  },
+  "joburg": {
+    "server": "whois.nic.joburg",
+    "not_found": "NOT FOUND"
+  },
+  "durban": {
+    "server": "whois.nic.durban",
+    "not_found": "NOT FOUND"
+  },
+  "capetown": {
+    "server": "whois.nic.capetown",
+    "not_found": "NOT FOUND"
   }
 }
