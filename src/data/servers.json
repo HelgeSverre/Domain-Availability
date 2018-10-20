@@ -583,6 +583,10 @@
     "server": "whois.pandi.or.id",
     "not_found": "DOMAIN NOT FOUND"
   },
+  "co.id": {
+    "server": "whois.pandi.or.id",
+    "not_found": "DOMAIN NOT FOUND"
+  },
   "ie": {
     "server": "whois.domainregistry.ie",
     "not_found": "Not Registered"
