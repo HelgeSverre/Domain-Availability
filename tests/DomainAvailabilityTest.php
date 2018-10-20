@@ -261,7 +261,6 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
           array('whois.nic.ag', 'ag'),
           array('whois.ai', 'ai'),
           array('whois.nic.asia', 'asia'),
-          array('whois.audns.net.au', 'au'),
           array('whois.nic.aw', 'aw'),
           array('whois.ax', 'ax'),
           array('whois.nic.bar', 'bar'),
@@ -274,7 +273,6 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
           array('whois.nic.co', 'co'),
           array('whois.nic.coop', 'coop'),
           array('whois.nic.cx', 'cx'),
-          array('whois.nic.ec', 'ec'),
           array('whois.educause.edu', 'edu'),
           array('whois.eu', 'eu'),
           array('whois.nic.fo', 'fo'),
@@ -284,24 +282,17 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
           array('whois.hkirc.hk', 'hk'),
           array('whois.nic.ir', 'ir'),
           array('whois.jprs.jp', 'jp'),
-          array('whois.kenic.or.ke', 'ke'),
           array('whois.kr', 'kr'),
           array('whois.nic.luxury', 'luxury'),
           array('whois.nic.ly', 'ly'),
-          array('whois.iam.net.ma', 'ma'),
           array('whois.nic.menu', 'menu'),
           array('whois.monic.mo', 'mo'),
           array('whois.nic.monash', 'monash'),
-          array('whois.nic.mp', 'mp'),
           array('whois.museum', 'museum'),
           array('whois.mx', 'mx'),
-          array('whois.domainregistry.my', 'my'),
-          array('whois.na-nic.com.na', 'na'),
           array('whois.nic.name', 'name'),
           array('whois.nc', 'nc'),
           array('whois.nic.nf', 'nf'),
-          array('whois.nic.net.ng', 'ng'),
-          array('whois.srs.net.nz', 'nz'),
           array('whois.registry.om', 'om'),
           array('kero.yachay.pe', 'pe'),
           array('whois.registry.pf', 'pf'),
@@ -311,23 +302,16 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
           array('whois.registry.qa', 'qa'),
           array('whois.nic.re', 're'),
           array('whois.nic.ruhr', 'ruhr'),
-          array('whois.nic.net.sa', 'sa'),
-          array('whois.nic.net.sb', 'sb'),
           array('whois.sgnic.sg', 'sg'),
           array('whois.sx', 'sx'),
           array('whois.tld.sy', 'sy'),
           array('whois.nic.tel', 'tel'),
           array('whois.nic.tf', 'tf'),
-          array('whois.thnic.co.th', 'th'),
           array('whois.nic.tr', 'tr'),
           array('whois.nic.travel', 'travel'),
-          array('whois.twnic.net.tw', 'tw'),
-          array('whois.tznic.or.tz', 'tz'),
           array('whois.ua', 'ua'),
-          array('whois.co.ug', 'ug'),
           array('whois.nic.uk', 'uk'),
           array('whois.nic.us', 'us'),
-          array('whois.nic.org.uy', 'uy'),
           array('whois.cctld.uz', 'uz'),
           array('whois.nic.ve', 've'),
           array('whois.nic.wed', 'wed'),
@@ -338,7 +322,6 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
           array('whois.nic.xyz', 'xyz'),
           array('whois.nic.yt', 'yt'),
           array('whois.nic.ryukyu', 'ryukyu'),
-          array('whois.nic.zm', 'zm'),
           array('net-whois.registry.net.za', 'net.za'),
           array('whois.nic.joburg', 'joburg'),
           array('whois.nic.durban', 'durban'),
@@ -350,7 +333,9 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
           // Registrar Sites
           array('pandi.id', 'id'),
           array('indoreg.co.id', 'co.id'),
-          array('internic.co.il', 'co.il')
+          array('internic.co.il', 'co.il'),
+          array('get.mp', 'mp'),
+          array('nic.ec', 'ec'),
 
           // TLDs missing example test domains
           // computer
@@ -531,7 +516,24 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
           // edu.bn
           // org.bn
           // net.bn
+          // au
           // il
+          // ke
+          // ma
+          // na
+          // ng
+          // nz
+          // sa
+          // sb
+          // th
+          // tw
+          // tz
+          // ug
+          // uy
+          // zm
+          // my
+
+
         );
     }
 
