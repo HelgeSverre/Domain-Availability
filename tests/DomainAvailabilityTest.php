@@ -282,7 +282,6 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
           array('whois.dotgov.gov', 'gov'),
           array('whois.nic.gs', 'gs'),
           array('whois.hkirc.hk', 'hk'),
-          array('whois.pandi.or.id', 'id'),
           array('whois.isoc.org.il', 'il'),
           array('whois.nic.ir', 'ir'),
           array('whois.jprs.jp', 'jp'),
@@ -344,7 +343,11 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
           array('net-whois.registry.net.za', 'net.za'),
           array('whois.nic.joburg', 'joburg'),
           array('whois.nic.durban', 'durban'),
-          array('whois.nic.capetown', 'capetown')
+          array('whois.nic.capetown', 'capetown'),
+
+          // Registrar Sites
+          array('pandi.id', 'id'),
+          array('indoreg.co.id', 'co.id'),
 
           // TLDs missing example test domains
           // computer
