@@ -595,6 +595,14 @@
     "server": "whois.isoc.org.il",
     "not_found": "No data was found to match the request criteria."
   },
+  "co.il": {
+    "server": "whois.isoc.org.il",
+    "not_found": "No data was found to match the request criteria."
+  },
+  "org.il": {
+    "server": "whois.isoc.org.il",
+    "not_found": "No data was found to match the request criteria."
+  },
   "im": {
     "server": "whois.nic.im",
     "not_found": "was not found."

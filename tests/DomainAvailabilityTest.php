@@ -282,7 +282,6 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
           array('whois.dotgov.gov', 'gov'),
           array('whois.nic.gs', 'gs'),
           array('whois.hkirc.hk', 'hk'),
-          array('whois.isoc.org.il', 'il'),
           array('whois.nic.ir', 'ir'),
           array('whois.jprs.jp', 'jp'),
           array('whois.kenic.or.ke', 'ke'),
@@ -345,9 +344,13 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
           array('whois.nic.durban', 'durban'),
           array('whois.nic.capetown', 'capetown'),
 
+          // Registry Sites
+          array('isoc.org.il', 'org.il'),
+
           // Registrar Sites
           array('pandi.id', 'id'),
           array('indoreg.co.id', 'co.id'),
+          array('internic.co.il', 'co.il')
 
           // TLDs missing example test domains
           // computer
@@ -528,6 +531,7 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
           // edu.bn
           // org.bn
           // net.bn
+          // il
         );
     }
 
