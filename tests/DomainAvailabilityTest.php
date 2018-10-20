@@ -78,7 +78,7 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
           // array('google.com.bh', 'com.bh'), // Bahrain (not yet supported)
           array('google.bi', 'bi'), // Burundi
           array('google.bj', 'bj'), // Benin
-          // array('google.com.bn', 'com.bn'), // Brunei (not yet supported)
+          array('google.com.bn', 'com.bn'), // Brunei (not yet supported)
           // array('google.com.bo', 'com.bo'), // Bolivia (not yet supported)
           // array('google.com.br', 'com.br'), // Brazil (not yet supported)
           // array('google.bs', 'bs'), // Bahamas (not yet supported)
@@ -267,7 +267,6 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
           array('whois.nic.bar', 'bar'),
           array('whois.nic.berlin', 'berlin'),
           array('whois.biz', 'biz'),
-          array('whois.bn', 'bn'),
           array('whois.nic.build', 'build'),
           array('whois.nic.net.bw', 'bw'),
           array('whois.nic.ceo', 'ceo'),
@@ -523,6 +522,9 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
           // zone
           // org.za
           // web.za
+          // edu.bn
+          // org.bn
+          // net.bn
         );
     }
 

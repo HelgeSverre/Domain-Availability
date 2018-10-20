@@ -139,9 +139,21 @@
     "server": "whois.uniregistry.net",
     "not_found": "is available for"
   },
-  "bn": {
-    "server": "whois.bn",
-    "not_found": "No records matching"
+  "com.bn": {
+    "server": "whois.bnnic.bn",
+    "not_found": "Domain Not Found"
+  },
+  "edu.bn": {
+    "server": "whois.bnnic.bn",
+    "not_found": "Domain Not Found"
+  },
+  "org.bn": {
+    "server": "whois.bnnic.bn",
+    "not_found": "Domain Not Found"
+  },
+  "net.bn": {
+    "server": "whois.bnnic.bn",
+    "not_found": "Domain Not Found"
   },
   "boutique": {
     "server": "whois.donuts.co",
