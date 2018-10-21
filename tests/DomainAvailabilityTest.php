@@ -13,17 +13,54 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
      */
     protected $service;
 
+    /**
+     * @var JsonLoader
+     */
+    protected $jsonLoader;
+
     public function setup()
     {
-
         $whoisClient = new SimpleWhoisClient();
-        $dataLoader = new JsonLoader("src/data/servers.json");
-        $this->service = new DomainAvailability($whoisClient, $dataLoader);
+        $this->jsonLoader = new JsonLoader("src/data/servers.json");
+        $this->service = new DomainAvailability($whoisClient, $this->getJsonLoader());
+    }
+
+    /**
+     * This test checks that domains that are expected to be available are reported as such
+     *
+     * @param string $availableDomain
+     *
+     * @throws \Exception
+     * @dataProvider availableDomainsProvider
+     */
+    public function testAvailableDomains($availableDomain)
+    {
+
+        $this->assertTrue(
+            $this->getService()->isAvailable($availableDomain),
+            'Domain \''.$availableDomain.'\' was expected to be reported available but was not'
+        );
+    }
+
+    /**
+     * Generates test cases for available domains iterating over all supported TLDs and adding 'helge-sverre-domain-availability'
+     * as the next level of domain
+     *
+     * @return array
+     */
+    public function availableDomainsProvider()
+    {
+        $loader = new JsonLoader("src/data/servers.json");
+        $cases = array();
+        foreach (array_keys($loader->load()) as $TLD){
+            $cases[] = array('helge-sverre-domain-availability.'.$TLD);
+        }
+        return $cases;
     }
 
 
     /**
-     * This check Tests that domains that are known to be taken are correctly reported as not available
+     * This test checks that domains that are known to be taken are correctly reported as not available
      *
      * @param string $testDomain
      *
@@ -543,5 +580,13 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
     protected function getService()
     {
         return $this->service;
+    }
+
+    /**
+     * @return JsonLoader
+     */
+    protected function getJsonLoader()
+    {
+        return $this->jsonLoader;
     }
 }
