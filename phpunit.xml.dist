@@ -9,7 +9,11 @@
         backupGlobals="false"
         bootstrap="vendor/autoload.php">
     <testsuites>
-        <testsuite name="Domain Availability Test Suite">
+        <testsuite name="unit">
+            <directory suffix=".php">./tests/</directory>
+            <exclude>./tests/ServerDataTest.php</exclude>
+        </testsuite>
+        <testsuite name="server_data">
             <directory suffix=".php">./tests/</directory>
         </testsuite>
     </testsuites>
