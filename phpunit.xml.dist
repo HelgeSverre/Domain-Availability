@@ -14,7 +14,7 @@
             <exclude>./tests/ServerDataTest.php</exclude>
         </testsuite>
         <testsuite name="server_data">
-            <directory suffix=".php">./tests/</directory>
+            <directory suffix=".php">./tests/ServerDataTest.php</directory>
         </testsuite>
     </testsuites>
 </phpunit>
