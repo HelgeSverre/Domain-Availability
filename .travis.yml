@@ -22,4 +22,4 @@ install:
 
 script:
 - if [ -z "$SUITE" ]; then  vendor/bin/phpunit  --testsuite unit; fi;
-- if [ "$SUITE" == "server_data" ]; then vendor/bin/phpunit  --testsuite server_data; fi;
+- if [ "$SUITE" == "server_data" ]; then php -d default_socket_timeout=2 vendor/bin/phpunit  --testsuite server_data; fi;
