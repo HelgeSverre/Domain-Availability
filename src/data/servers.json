@@ -139,9 +139,21 @@
     "server": "whois.uniregistry.net",
     "not_found": "is available for"
   },
-  "bn": {
-    "server": "whois.bn",
-    "not_found": "No records matching"
+  "com.bn": {
+    "server": "whois.bnnic.bn",
+    "not_found": "Domain Not Found"
+  },
+  "edu.bn": {
+    "server": "whois.bnnic.bn",
+    "not_found": "Domain Not Found"
+  },
+  "org.bn": {
+    "server": "whois.bnnic.bn",
+    "not_found": "Domain Not Found"
+  },
+  "net.bn": {
+    "server": "whois.bnnic.bn",
+    "not_found": "Domain Not Found"
   },
   "boutique": {
     "server": "whois.donuts.co",
@@ -571,11 +583,23 @@
     "server": "whois.pandi.or.id",
     "not_found": "DOMAIN NOT FOUND"
   },
+  "co.id": {
+    "server": "whois.pandi.or.id",
+    "not_found": "DOMAIN NOT FOUND"
+  },
   "ie": {
     "server": "whois.domainregistry.ie",
     "not_found": "Not Registered"
   },
   "il": {
+    "server": "whois.isoc.org.il",
+    "not_found": "No data was found to match the request criteria."
+  },
+  "co.il": {
+    "server": "whois.isoc.org.il",
+    "not_found": "No data was found to match the request criteria."
+  },
+  "org.il": {
     "server": "whois.isoc.org.il",
     "not_found": "No data was found to match the request criteria."
   },

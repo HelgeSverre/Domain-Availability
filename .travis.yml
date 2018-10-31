@@ -1,12 +1,25 @@
 language: php
-php:
-  - 5.4
-  - 5.5
-  - 5.6
-  - hhvm
-  - nightly
+
+matrix:
+  fast_finish: true
+  include:
+    - php: 5.4
+    - php: 5.5
+    - php: 5.6
+    - php: 5.6
+      env: SUITE='server_data'
+    - php: hhvm
+  allow_failures:
+    - php: 5.6
+      env: SUITE='server_data'
+
+before_install:
+  # Composer only updated in TravisCI containers when they build their images every month or so
+  - composer self-update
+
+install:
+  - composer install --no-interaction --prefer-dist
 
 script:
-- phpunit tests/DomainAvailabilityTest.php
-- phpunit tests/JsonLoaderTest.php
-- phpunit tests/SimpleWhoisClientTest.php
+- if [ -z "$SUITE" ]; then  vendor/bin/phpunit  --testsuite unit; fi;
+- if [ "$SUITE" == "server_data" ]; then php -d default_socket_timeout=2 vendor/bin/phpunit  --testsuite server_data; fi;
