@@ -257,7 +257,7 @@
   },
   "club": {
     "server": "whois.nic.club",
-    "not_found": "Not found:"
+    "not_found": "No Data Found"
   },
   "cn": {
     "server": "whois.cnnic.cn",
