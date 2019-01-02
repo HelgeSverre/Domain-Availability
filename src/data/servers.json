@@ -475,6 +475,10 @@
     "server": "whois-frogans.nic.fr",
     "not_found": "Requested Domain cannot be found"
   },
+  "fun": {
+    "server": "whois.nic.fun",
+    "not_found": "DOMAIN NOT FOUND"
+  },
   "futbol": {
     "server": "whois.unitedtld.com",
     "not_found": "Domain not found."
