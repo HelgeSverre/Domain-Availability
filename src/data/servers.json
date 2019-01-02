@@ -1083,6 +1083,10 @@
     "server": "whois.arnes.si",
     "not_found": "No entries found"
   },
+  "site": {
+    "server": "whois.nic.site",
+    "not_found": "DOMAIN NOT FOUND"
+  },
   "singles": {
     "server": "whois.donuts.co",
     "not_found": "Domain not found."
