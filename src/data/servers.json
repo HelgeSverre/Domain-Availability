@@ -715,6 +715,10 @@
     "server": "whois.nic.li",
     "not_found": "We do not have an entry in our database matching your query"
   },
+  "life": {
+    "server": "whois.nic.life",
+    "not_found": "Domain not found."
+  },
   "lighting": {
     "server": "whois.donuts.co",
     "not_found": "Domain not found."
