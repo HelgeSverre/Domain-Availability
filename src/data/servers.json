@@ -1343,6 +1343,10 @@
     "server": "whois.donuts.co",
     "not_found": "Domain not found."
   },
+  "vip": {
+    "server": "whois.nic.vip",
+    "not_found": "This domain name has not been registered."
+  },
   "vodka": {
     "server": "whois-dub.mm-registry.com",
     "not_found": "Status: Not Registered"
