@@ -1401,7 +1401,7 @@
   },
   "ws": {
     "server": "whois.website.ws",
-    "not_found": "No match for"
+    "not_found": "The queried object does not exist"
   },
   "xxx": {
     "server": "whois.nic.xxx",
