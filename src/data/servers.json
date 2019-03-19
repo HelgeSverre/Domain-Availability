@@ -13,7 +13,7 @@
   },
   "io": {
     "server": "whois.nic.io",
-    "not_found": "is available for purchase"
+    "not_found": "NOT FOUND"
   },
   "computer": {
     "server": "whois.donuts.co",
