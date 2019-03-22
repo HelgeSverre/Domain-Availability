@@ -523,6 +523,10 @@
     "server": "whois.dotgov.gov",
     "not_found": "MATCH"
   },
+  "gq": {
+    "server": "whois.dominio.gq",
+    "not_found": "domain name not known"
+  },
   "graphics": {
     "server": "whois.donuts.co",
     "not_found": "Domain not found."

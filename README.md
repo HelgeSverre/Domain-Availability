@@ -80,7 +80,7 @@ These are the domain extensions that are supported by this script.
 .ee, .email, .engineering, .enterprises, .equipment, .es, .estate, .eu, .eus, .events,
 .expert, .exposed, .farm, .feedback, .fi, .fish, .fishing, .flights, .florist, .fo, 
 .foo, .foundation, .fr, .frogans, .futbol, .ga, .gal, .gd, .gg, .gi, .gift, .gl, .glass,
-.gop, .gov, .graphics, .gripe, .gs, .guitars, .guru, .gy, .haus, .hk, .hn, .holiday, 
+.gop, .gov, .gq, .graphics, .gripe, .gs, .guitars, .guru, .gy, .haus, .hk, .hn, .holiday, 
 .horse, .house, .hr, .ht, .hu, .id, .ie, .il, .im, .immobilien, .in, .industries, 
 .institute, .int, .international, .iq, .ir, .is, .it, .je, .jobs, .jp, .kaufen, .ke, 
 .kg, .ki, .kitchen, .kiwi, .koeln, .kr, .kz, .la, .land, .lease, .li, .lighting, .limo, 
@@ -108,7 +108,7 @@ the domain information, the following domain extensions are not available (yet):
 
 ```
 .dj, .do, .eg, .eh, .er, .et, .fj, .fk, .fm, .gallery, .gb, .ge, .gf, .gh, .gm, .gn, .gp,
-.gq, .gr, .gt, .gu, .gw, .hm, .jetzt, .jm, .jo, .kh, .km, .kn, .kp, .kred, .kw, .ky, .lb, 
+.gr, .gt, .gu, .gw, .hm, .jetzt, .jm, .jo, .kh, .km, .kn, .kp, .kred, .kw, .ky, .lb, 
 .lk, .lr, .ls, .mc, .mf, .mh, .mil, .mm, .moe, .mq, .mr, .mt, .mv, .mw, .mz, .nagoya, .ne, 
 .neustar, .ni, .np, .nr, .nyc, .okinawa, .pa, .pg, .ph, .pk, .pn, .ps, .py, .qpon, .ren, 
 .rw, .sd, .sj, .sl, .sohu, .sr, .ss, .sv, .sz, .td, .tg, .tj, .tokyo, .tp, .trade, .tt, 
