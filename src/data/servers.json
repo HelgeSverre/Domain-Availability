@@ -1243,6 +1243,10 @@
     "server": "whois.nic.tr",
     "not_found": "Invalid input"
   },
+  "com.tr": {
+    "server": "whois.nic.tr",
+    "not_found": "Invalid input"
+  },
   "training": {
     "server": "whois.donuts.co",
     "not_found": "Domain not found."
