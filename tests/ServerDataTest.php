@@ -53,7 +53,7 @@ class ServerDataTest extends \PHPUnit_Framework_TestCase
      */
     public function availableDomainsProvider()
     {
-        $loader = new JsonLoader("tests/servers.json");
+        $loader = new JsonLoader("src/data/servers.json");
         $cases = array();
         foreach (array_keys($loader->load()) as $TLD) {
             $cases[] = array('helge-sverre-domain-availability.'.$TLD);
@@ -90,10 +90,6 @@ class ServerDataTest extends \PHPUnit_Framework_TestCase
      */
     public function nonAvailableDomainsProvider()
     {
-        return array(
-            array('example.com', 'com'), // rfc2606
-        );
-
         return array(
             array('example.com', 'com'), // rfc2606
             array('example.net', 'net'), // rfc2606
