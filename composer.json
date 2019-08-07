@@ -21,7 +21,7 @@
     "issues": "https://github.com/HelgeSverre/Domain-Availability/issues"
   },
   "require": {
-    "php": ">=5.3",
+    "php": ">=7.0",
     "jeremykendall/php-domain-parser": "^5.5"
   },
   "require-dev": {
