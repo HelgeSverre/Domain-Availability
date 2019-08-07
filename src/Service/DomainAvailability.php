@@ -5,6 +5,9 @@ namespace Helge\Service;
 
 use Helge\Client\WhoisClientInterface;
 use Helge\Loader\LoaderInterface;
+use Pdp\Cache;
+use Pdp\CurlHttpClient;
+use Pdp\Manager;
 use Pdp\Parser;
 use Pdp\PublicSuffixListManager;
 
@@ -43,7 +46,6 @@ class DomainAvailability
             }
         }
 
-
         $domainInfo = $this->parse($domain);
 
         if (!isset($this->servers[$domainInfo["tld"]])) {
@@ -51,7 +53,6 @@ class DomainAvailability
         }
 
         $whoisServerInfo = $this->servers[$domainInfo["tld"]];
-
 
         /**
          * If for some reason you've added a WHOIS server running
@@ -92,8 +93,6 @@ class DomainAvailability
         return array_keys($this->servers);
     }
 
-
-
     /**
      * Wrapper around Jeremy Kendall's PHP Domain Parser that parses the
      * domain/url passed to the function and returns the Tld and Valid domain
@@ -103,17 +102,17 @@ class DomainAvailability
      */
     private function parse($domain)
     {
-        $pslManager = new PublicSuffixListManager();
-        $parser     = new Parser($pslManager->getList());
+        $manager = new Manager(new Cache(), new CurlHttpClient());
+        $rules = $manager->getRules();
+        $domain = $rules->resolve($domain);
 
-        // First check if the suffix is actually valid
-        if (!$parser->isSuffixValid($domain)) {
+        if (!$domain->isKnown()) {
             throw new \InvalidArgumentException("Invalid TLD");
         }
 
         $components = [];
-        $components["tld"]      = $parser->getPublicSuffix($domain);
-        $components["domain"]   = $parser->getRegisterableDomain($domain);
+        $components["tld"]      = $domain->getPublicSuffix($domain);
+        $components["domain"]   = $domain->getRegistrableDomain($domain);
 
         return $components;
     }
