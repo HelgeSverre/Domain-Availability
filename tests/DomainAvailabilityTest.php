@@ -56,13 +56,13 @@ class DomainAvailabilityTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException
-     * @expectedExceptionMessage No WHOIS entry was found for that TLD
      * @throws \Exception
      */
     public function testUnsupportedTld()
     {
-        $this->getService()->isAvailable('bar.foo');
+        $this->expectExceptionMessage('No WHOIS entry was found for that TLD');
+
+        $this->getService()->isAvailable('bar.app');
     }
 
 

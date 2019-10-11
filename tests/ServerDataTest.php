@@ -39,7 +39,6 @@ class ServerDataTest extends \PHPUnit_Framework_TestCase
      */
     public function testAvailableDomains($availableDomain)
     {
-
         $this->assertTrue(
             $this->getService()->isAvailable($availableDomain),
             'Domain \''.$availableDomain.'\' was expected to be reported available but was not'
@@ -56,7 +55,7 @@ class ServerDataTest extends \PHPUnit_Framework_TestCase
     {
         $loader = new JsonLoader("src/data/servers.json");
         $cases = array();
-        foreach (array_keys($loader->load()) as $TLD){
+        foreach (array_keys($loader->load()) as $TLD) {
             $cases[] = array('helge-sverre-domain-availability.'.$TLD);
         }
         return $cases;
