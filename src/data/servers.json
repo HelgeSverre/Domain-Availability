@@ -1463,6 +1463,10 @@
     "server": "whois.nic.durban",
     "not_found": "NOT FOUND"
   },
+  "dev": {
+    "server": "whois.nic.google",
+    "not_found": "Domain not found"
+  },
   "capetown": {
     "server": "whois.nic.capetown",
     "not_found": "NOT FOUND"
