@@ -619,9 +619,29 @@
     "server": "whois.unitedtld.com",
     "not_found": "Domain not found."
   },
-  "in": {
-    "server": "whois.inregistry.net",
-    "not_found": "NOT FOUND"
+	"in": {
+    "server": "whois.registry.in",
+    "not_found": "No Data Found"
+  },
+  "co.in": {
+    "server": "whois.registry.in",
+    "not_found": "No Data Found"
+  },
+  "firm.in": {
+    "server": "whois.registry.in",
+    "not_found": "No Data Found"
+  },
+  "gen.in": {
+    "server": "whois.registry.in",
+    "not_found": "No Data Found"
+  },
+  "org.in": {
+    "server": "whois.registry.in",
+    "not_found": "No Data Found"
+  },
+  "net.in": {
+    "server": "whois.registry.in",
+    "not_found": "No Data Found"
   },
   "industries": {
     "server": "whois.donuts.co",
@@ -1438,10 +1458,6 @@
   "co.uk": {
     "server": "whois.nic.uk",
     "not_found": "This domain name has not been registered."
-  },
-  "co.in": {
-    "server": "whois.inregistry.net",
-    "not_found": "NOT FOUND"
   },
   "co.za": {
     "server": "coza-whois.registry.net.za",
