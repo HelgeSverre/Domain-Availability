@@ -26,6 +26,14 @@ class DomainAvailability
     }
 
 
+    /**
+     * Check if the passed domain is available for registrytion.
+     *
+     * @param string $domain    The domain that should be checked.
+     * @param bool $quick       If TRUE the domain is considered as NOT available if there exists a DNS record.
+     * @throws \Exception       Exception is thrown if the domain status is not clear.
+     * @return bool
+     */
     public function isAvailable($domain, $quick = false)
     {
 
@@ -77,10 +85,11 @@ class DomainAvailability
         if (strpos($whoisData, $whoisServerInfo["not_found"]) !== false) {
             // The domain is available
             return true;
+        } else if (!isset($whoisServerInfo["found"]) || strpos($whoisData, $whoisServerInfo["found"]) !== false) {
+            // If we've come this far, the domain is not available.
+            return false;
         }
-
-        // If we've come this far, the domain is not available.
-        return false;
+        throw new \Exception('The domain registration status is not clear.');
     }
 
 

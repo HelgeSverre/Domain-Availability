@@ -1,31 +1,38 @@
 {
   "com": {
     "server": "whois.verisign-grs.com",
-    "not_found": "No match for "
+    "not_found": "No match for ",
+    "found": "Registry Domain ID:"
   },
   "net": {
     "server": "whois.verisign-grs.com",
-    "not_found": "No match for "
+    "not_found": "No match for ",
+    "found": "Registry Domain ID:"
   },
   "org": {
     "server": "whois.pir.org",
-    "not_found": "NOT FOUND"
+    "not_found": "NOT FOUND",
+    "found": "Registry Domain ID:"
   },
   "io": {
     "server": "whois.nic.io",
-    "not_found": "NOT FOUND"
+    "not_found": "is available for purchase",
+    "found": "Registry Domain ID:"
   },
   "computer": {
     "server": "whois.donuts.co",
-    "not_found": "Domain not found."
+    "not_found": "Domain not found.",
+    "found": "Creation Date:"
   },
   "ac": {
     "server": "whois.nic.ac",
-    "not_found": "is available for purchase"
+    "not_found": "is available for purchase",
+    "found": "Creation Date:"
   },
   "academy": {
     "server": "whois.donuts.co",
-    "not_found": "Domain not found."
+    "not_found": "Domain not found.",
+    "found": "Creation Date:"
   },
   "actor": {
     "server": "whois.unitedtld.com",
@@ -333,7 +340,8 @@
   },
   "de": {
     "server": "whois.denic.de",
-    "not_found": "Status: free"
+    "not_found": "Status: free",
+    "found": "Status: connect"
   },
   "democrat": {
     "server": "whois.unitedtld.com",
@@ -469,7 +477,8 @@
   },
   "fr": {
     "server": "whois.nic.fr",
-    "not_found": "No entries found"
+    "not_found": "No entries found",
+    "found": "Expiry Date"
   },
   "frogans": {
     "server": "whois-frogans.nic.fr",
@@ -1429,7 +1438,8 @@
   },
   "ws": {
     "server": "whois.website.ws",
-    "not_found": "The queried object does not exist"
+    "not_found": "The queried object does not exist",
+    "found": "Creation Date:"
   },
   "xxx": {
     "server": "whois.nic.xxx",
